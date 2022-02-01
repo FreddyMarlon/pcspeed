@@ -8,10 +8,10 @@ const passport= require('passport');
 const {database}= require('./keys');
 var fs = require('fs');
 var https = require('https');
-/*var options = {
-   key:  fs.readFileSync('/node/firstweb/src/server.key', 'utf8'),
-   cert: fs.readFileSync('/node/firstweb/src/server.cert', 'utf8')
- };*/
+var options = {
+   key:  fs.readFileSync('/node/firstweb/server.key', 'utf8'),
+   cert: fs.readFileSync('/node/firstweb/server.cert', 'utf8')
+ };
 var favicon = require('serve-favicon');
 
 
@@ -65,7 +65,7 @@ app.use('/enlaces',require('./routes/enlaces'));
 //archivos estaticos
 app.use(express.static(path.join(__dirname,'public')));
  
-const server = https.createServer(app).listen(app.get('port'), function(){
+const server = https.createServer(options,app).listen(app.get('port'), function(){
    console.log("Servidor Activo en Puerto: %s ", app.get('port'));
 }); 
 
