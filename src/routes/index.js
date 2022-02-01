@@ -4,7 +4,7 @@ const validar= require('../lib/validar');
 
 const router= express.Router();
 
-router.get('/', async(req,res) =>{
+router.get('pcspeed.herokuapp.com/', async(req,res) =>{
    res.render('index');
       
 });

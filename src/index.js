@@ -6,7 +6,7 @@ const session = require('express-session');
 const mysqlStore= require('express-mysql-session');
 const passport= require('passport');
 const {database}= require('./keys');
-var fs = require('fs');
+/*var fs = require('fs');*/
 var https = require('https');
 /*var options = {
    key:  fs.readFileSync('/node/firstweb/server.key', 'utf8'),
