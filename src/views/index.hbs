@@ -1,0 +1,153 @@
+
+	<main class="index">
+    <script>		  
+		   var socket = io('https://localhost:3000');
+			socket.on('pushNotification', function (data) {			
+			Push.create("PcSpeed ", {
+					body: data.msg, 
+					icon: '/img/notilogo.png',         
+          timeout: 12000,
+					onClick: function () {
+            window.focus();
+            this.close();                         
+            }					
+				});			
+			});			
+		</script>       
+     
+      <div id="prueba" class="carousel slide" data-ride="carousel">	
+          <!-- INDICADORES PIE -->
+          <ul class="carousel-indicators">
+            <li data-target="#prueba" data-slide-to="0" class="active"></li>
+            <li data-target="#prueba" data-slide-to="1"></li>
+            <li data-target="#prueba" data-slide-to="2"></li>
+          </ul>		
+          <!-- DIAPOSITIVAS -->
+          <div class="carousel-inner">
+            
+            <div class="carousel-item active">
+              <img src="/img/servicio.png" alt="1" class="opacar">
+                   <div class="carousel-content">
+                        <div class="header-text hidden-xs text-center" id="heads">
+                        <div class="col-md-12">
+                            <h2 class="mih2s">
+                            	<span>Bienvenido a <strong>PcSpeed</strong></span>
+                            </h2>              
+                            <h3 class="mih3s">
+                            	<span>Innovación de servicio en la web</span>
+                            </h3>
+                         </div>
+                         </div> 
+                    </div>     
+            </div>   
+           
+
+            <div class="carousel-item">
+              <img src="/img/empresa.png" alt="1" class="opacar2">
+                    <div class="carousel-content">
+                        <div class="header-text hidden-xs text-right" id="heade">
+                            <h2 class="mih2e">
+                            	<span>Talento Humano <strong>Experto</strong></span>
+                            </h2>
+                            <h3 class="mih3e"> 
+                            	<span>En cada una de las áreas que forman
+                                    parte de la infraestructura digital
+                                    de su empresa.
+                              </span>                                         
+                            </h3>                                                  
+                         </div> 
+                    </div>  
+            </div>
+            <div class="carousel-item">                 
+              <img src="/img/ciudad.png" alt="1" class="opacar3">
+                    <div class="carousel-content">
+                          <div class="header-text hidden-xs text-right" id="headc">                        
+                            <h2 class="mih2c">
+                            	<span>Sin límites siempre <strong>Conectados</strong></span>
+                            </h2>                           
+                            <h3 class="mih3c">
+                            	<span>Servicio integral comprometido con soluciones a nuestros clientes</span>
+                            </h3>                         
+                         </div> 
+                    </div>  
+            </div>
+          </div>        
+      <!-- FLECHAS -->
+      <a class="carousel-control-prev" href="#prueba" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#prueba" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+ 
+
+     <div class="container-fluid my-auto">
+     <header class="row text-white animate__animated animate__bounceInLeft">
+        <div class="col-sm-6 text-center p-4">         
+          <p class="text-justify p-1" style="font-size: 18px">
+            <span>Estamos dedicados exclusivamente al servicio de soporte de equipos de computación: Hardware y
+              Software; Realizamos además asesorias a través de nuestra página con solo registrarse. Desarrollo de
+              software. Reparaciones electrónicas de equipos entre otros servicios.</span>
+          </p>
+        </div>
+        <div class="col-sm-6 text-center">
+          <img src="/img/logof.png" width="235" height="270" class="w-auto animated bounceInleft" alt="Logo Web">
+        </div>
+     </header>
+    </div>
+    
+    <div class="container-fluid my-auto">
+      <div class="row text-white text-center" style="background-color: #f5f9fa;">
+        <div class="col-sm-6 p-2">          
+          <img src="/img/reparacion.png" width="235" height="260" class=" w-auto animated bounceInRight"
+            alt="logo reparar">
+        </div>
+        <div class="col-sm-6 animate__animated animate__bounceInRight">
+          <p class="p-1"></p>
+          <nav>
+            <div class="nav nav-tabs " id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="nav-soft-tab" data-toggle="tab" href="#nav-soft" role="tab"
+                aria-controls="nav-soft" aria-selected="true">Programas</a>
+              <a class="nav-item nav-link" id="nav-data-tab" data-toggle="tab" href="#nav-data" role="tab"
+                aria-controls="nav-data" aria-selected="false">Datos</a>
+              <a class="nav-item nav-link" id="nav-seg-tab" data-toggle="tab" href="#nav-seg" role="tab"
+                aria-controls="nav-seg" aria-selected="false">Seguridad</a>
+              <a class="nav-item nav-link" id="nav-red-tab" data-toggle="tab" href="#nav-red" role="tab"
+                aria-controls="nav-red" aria-selected="false">Redes</a>
+              <a class="nav-item nav-link" id="nav-dis-tab" data-toggle="tab" href="#nav-dis" role="tab"
+                aria-controls="nav-dis" aria-selected="false">Desarrollo Web</a>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active text-justify" id="nav-soft" role="tabpanel"
+              aria-labelledby="nav-soft-tab">Instalación de Sistemas Operativos versiones Home: Windows XP,7,8,10 para
+              arquitecturas de 32 y 64 bits, Linux y MacOs. Además de cualquier tipo de software que requiera en su
+              equipo. Programas gratuitos de multimedia, configuración de drivers o controladores para su óptimo
+              desempeño.</div>
+            <div class="tab-pane fade text-justify" id="nav-data" role="tabpanel" aria-labelledby="nav-data-tab">
+              Recuperación de datos: Disco duros fijos, sd, micro sd, SSD. Se reparan pendrives y se respalda
+              información por medio de backups en discos externos. Diagnóstico de cualquier dispositivo de
+              almacenamiento masivo. </div>
+            <div class="tab-pane fade text-justify" id="nav-seg" role="tabpanel" aria-labelledby="nav-seg-tab">Ofrecemos
+              : Instalación y configuración de cámaras de seguridad y dvr, además de biométricos esenciales en el
+              control de acceso contando también con monitorización remota y en tiempo real de los sistemas de
+              videovigilancia.</div>
+            <div class="tab-pane fade text-justify" id="nav-red" role="tabpanel" aria-labelledby="nav-red-tab">
+              Todo en redes windows: Instalación de Cableado de red, configuración de equipos, configuración y reparación de
+              router. Instalación y configuración de servidores Linux, habilitando servicios segun requerimientos del
+              cliente. </div>
+            <div class="tab-pane fade text-justify" id="nav-dis" role="tabpanel" aria-labelledby="nav-dis-tab">
+              Programación: Soluciones digitales a problemas prácticos mediante la producción de programas,
+              aplicaciones y sitios web innovadores. Ayudamos a las empresas a obtener información valiosa sobre el
+              análisis predictivo del cliente, la visión por computadora, el procesamiento de texto, el mantenimiento
+              predictivo y mucho más. Ésto, a su vez, ayuda a su organización a escalar mejor, minimizando el riesgo y
+              ahorrando costos.</div>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+   
+
+</main>

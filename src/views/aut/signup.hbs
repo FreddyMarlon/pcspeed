@@ -1,0 +1,45 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            
+            <div class="card text-center animated flipInY">
+                <div class="card-header bg-dark">
+                    <h3>Registrate</h3>
+                </div>
+                <div class="card-body">
+                    <img src="/img/logoreg.png"  alt="loginuser" class="card-img-top mx-auto m-2 rounded-circle w-25">
+                    <form action="/signup" method="POST">
+                      <div class="form-group">
+                          <input type="text"  name="nombre" placeholder="Nombre" class="form-control" autofocus required>
+                      </div>
+                      <div class="form-group">
+                          <input type="text" name="usuario" placeholder="Usuario" class="form-control" required>
+                      </div>
+                      <div class="form-group">
+                          <input type="password" name="clave" placeholder="Clave" class="form-control" required>
+                      </div>
+                      <div class="form-check text-left">
+                        <input class="form-check-input text-left"  type="radio" name="tipo" id="rd1" value="I" checked>
+                        <label class="form-check-label" for="rd1">
+                            Invitado
+                        </label>
+                      </div>
+                      <div class="form-check text-left">
+                        <input class="form-check-input text-left" type="radio" name="tipo" id="rd2" value="A">
+                        <label class="form-check-label" for="rd2">
+                            Administrador
+                        </label>
+                      </div>                       
+                      
+                      <div class="form-group">
+                          <button class="btn btn-primary btn-block">                              
+                            Registrar
+                          </button>
+                      </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

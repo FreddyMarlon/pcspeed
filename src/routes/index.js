@@ -1,13 +1,59 @@
 const express=require ('express');
+const nodemailer=require('nodemailer');
+const validar= require('../lib/validar');
+
 const router= express.Router();
 
-router.get('/',(req,res) =>{
-   res.render('index.html',{title: 'Primera Web'});
+router.get('/', async(req,res) =>{
+   res.render('index');
       
 });
 
-router.get('/contactos',(req,res) =>{
-   res.render('contactos.html',{title:'Pagina de Contactos'});
-      
-});
+
+
+
+router.post('/enviar-correo', validar.validar(validar.validarcontactos), async(req,res) =>{ 
+  const {nombre,telefono,correo,mens}=req.body;  
+  var correostr=req.body.correo;
+
+  contentHTML=`
+       <h1>Información de Usuario</h1>
+       <ul>
+             <li>Nombre: ${nombre}</li>
+             <li>Telefono: ${telefono}</li>
+             <li>Correo: ${correo}</li>             
+       </ul>
+       <p>${mens}</p>
+  `;           
+  const transporter = nodemailer.createTransport({
+      host:'http://185.151.30.180/',
+      port: 465,
+      secure: false,
+      auth:{
+         user:'marlonf73@pcspeed.tech',         
+         pass:'C@psule73'
+      },
+      tls:{
+          rejectUnauthorized:false
+      }     
+  });
+
+  const info =await transporter.sendMail({
+     from:"'Pcspeed Servidor' <marlonf73@pcspeed.tech>",
+     to: 'marlonf73@gmail.com',
+     bcc: correostr,
+     subject:'Solicitud de Cliente',
+     html:contentHTML
+  });
+   
+      if (info.messageId){ 
+         
+         res.redirect('/correok');
+      }else{
+         req.flash('message','Error al enviar solicitud');      
+      }
+
+});      
+  
+
 module.exports=router;

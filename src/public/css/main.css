@@ -1,7 +1,322 @@
-body {
-
-	background: #005C97;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #363795, #005C97);
-    background: linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+/* audio*/
+#audio{
+display: none
 }
+/*Letras y fondos*/
+body {
+    
+    background-image: url('/img/fondocuerpo4.png');
+    background-repeat: repeat;    
+   /* background: linear-gradient(180deg, rgb(250, 250, 252) 38%, rgb(250, 250, 252) 38%, rgb(1, 1, 29) 38%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow: hidden;*/
+}
+/*boton de top de pagina*/
+.boton-subir{
+  display: none;
+  background:black;
+  border: thin solid grey;
+  border-radius: 3px;
+  position: fixed;
+  right: 15px;
+  bottom:2px;
+  z-index: 999999999;
+}
+/*evento hover*/
+.boton-subir:hover{
+  box-shadow:   0px 2px 10px 0px rgba(255, 255, 255, 0.75);
+}
+/*estilos para el tag i*/
+.boton-subir i{
+  color: orange;
+  font-size: 1em;
+  padding: 6px 10px 6px 10px;  
+}
+/*Slider de las imagenes*/
+.carousel{
+    background: black;
+}
+#heads{
+    position: absolute;   	
+    top:10.8rem;
+    width: 96.66666666666666%;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+#heade{
+    position: absolute;
+	top:10rem;
+    width: 96.66666666666666%;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 0 1px 2px rgb(0,0,0,.6);
+}
+#headc{
+    position: absolute;
+	top:10rem;
+    width: 96.66666666666666%;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+.carousel-indicators li {  
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+.carousel-inner > .item > img {   
+   object-fit: scale-down;  
+    height: 50vh;    
+    width: 100%;     
+}
+.opacar{
+    opacity: 0.3;
+	filter: alpha(opacity=80);
+}
+.opacar2{
+    opacity: 0.3;
+	filter: alpha(opacity=80);
+}
+.opacar3{
+    opacity: 0.3;
+	filter: alpha(opacity=80);
+}
+.carousel-control-prev span,
+.carousel-control-next span {    
+    opacity: .1;
+	filter: alpha(opacity=1);
+}
+.carousel-control-prev span:hover,
+.carousel-control-next span:hover {
+    opacity: 1;
+	filter: alpha(opacity=70);	
+}
+.mihr{    
+  color:grey;
+  width:3px;
+}
+footer{
+    background:#010414;
+    font-size: 1rem;
+    color:white;
+    font-family: 'Oswald', sans-serif;
+}
+.col-form-label{
+    color:black;
+}
+.modal-dialog { 
+     margin: 0; 
+     position: fixed; 
+     width: 90%;
+	 max-width: 1200px;
+    /* top: 32%; 
+     left: 70%;*/
+}
+.index{
+    width: 100%;
+    height: 100%;    
+}
+h2{
+    font-family: 'Oswald', sans-serif;
+}
+h3{    
+    color: white;
+    font-size: 1rem;
+    font-family: 'Oswald', sans-serif;
+}
+h4{
+    /*font-family: 'Open Sans Condensed', sans-serif;*/
+    /*font-family: 'Anton', sans-serif;*/
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    /*font-family: 'Poiret One', cursive;*/
+    /*font-family: 'Pompiere', cursive;*/  
+}
+h5{
+    color: black;
+    font-size: 1rem;    
+    font-family: 'Oswald', sans-serif;
+}
+.mih2s{
+  color:white;  
+  font-size: 4rem; 
+  opacity: 1;
+  font-family: 'Oswald', sans-serif; 
+}
+.mih3s{
+    color:white;    
+    font-size:1.5rem; 
+    opacity: 1;
+    font-family: 'Oswald', sans-serif;   
+}
+.mih2e{    
+    color:rgb(6, 106, 255);    
+    font-size: 2rem;   
+    opacity: 1;
+    font-family: 'Oswald', sans-serif;    
+}.mih3e{    
+    color:white;    
+    font-size: 1rem; 
+    opacity: 1;
+    font-family: 'Oswald', sans-serif;
+}
+.mih2c{
+    color:orange;
+    font-size: 2rem; 
+    opacity: 1;
+    font-family: 'Oswald', sans-serif;  
+}
+.mih3c{
+    color:white;    
+    font-size: 1rem; 
+    opacity: 1;
+    font-family: 'Oswald', sans-serif;        
+}
+p{
+    font-size: 1rem;
+    font-family: 'Oswald', sans-serif;
+}
+input,textarea,button{
+    font-size: 1rem; 
+    font-family: 'Oswald', sans-serif;    
+}
+
+.navbar{        
+    font-size: 1rem;
+    font-family: 'Oswald', sans-serif;    
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+     color:orange !important;
+}
+#navbarNav li:hover > a {
+    color:orange;
+    font-size: 1rem;    
+    font-family: 'Oswald', sans-serif;
+}
+.nav-item{       
+    font-size: 0.8rem;
+    font-family: 'Oswald', sans-serif;
+}
+.nav-tabs .nav-link.active,
+.show>.nav-link{
+    background:  #010414 !important;
+    color:white;
+    font-family: 'Oswald', sans-serif;     
+}
+.tab-pane{
+    color: #020005;       
+    font-size: 0.8rem;
+    font-family: 'Oswald', sans-serif;
+}
+.btn{
+    font-size: 1rem;
+    font-family: 'Oswald', sans-serif;    
+}
+
+#miprofile{
+    background: white;
+}
+#imgbody{
+    position: absolute; 
+    top:50px;
+    left:0px;  
+    opacity: 0.4;
+}
+.card{
+    border-color: black;     
+}
+
+.micardtit{     
+    
+    color:black;   
+    font-size: 0.8rem;    
+    font-family:'Open Sans Condensed', sans-serif;
+    
+} 
+.miedo{     
+    color:black;
+    font-size: 0.8rem;
+    font-family:'Open Sans Condensed', sans-serif;
+}
+.mip{     
+    color:black;
+    text-decoration: underline;
+    font-size: 0.7rem;
+    font-family:'Open Sans Condensed', sans-serif; 
+    opacity:1 !important;
+}
+.mip2{    
+    color: black;    
+    font-size: 0.7rem;    
+    font-family:'Open Sans Condensed', sans-serif;
+    opacity: 1 !important;
+}
+.mip3{
+    color:red;    
+    font-size: 0.7rem;
+    font-family:'Open Sans Condensed', sans-serif;
+}
+.mip4{
+    color:green;    
+    font-size: 0.7rem;
+    font-family:'Open Sans Condensed', sans-serif;   
+}
+.mibt{
+    color:black;
+    font-size: 0.7rem;
+    font-family:'Open Sans Condensed', sans-serif;      
+}
+.mitt{
+    color:white;
+    font-size: 1rem;    
+    font-family:'Oswald', sans-serif;      
+}
+
+.toast-info{
+  top: 4rem;   
+  max-width: max-content; 
+  float:right;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: .25rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,.1);
+  background-color:rgba(0, 0, 255, 0.445) !important;
+  opacity: 1;  
+}
+.toast-success{
+    top: 4rem;   
+    max-width: max-content; 
+    float:right;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: .25rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,.1);
+    background-color:rgba(9, 255, 9, 0.37) !important;
+    opacity: 1;  
+}
+.toast-error{
+    top: 4rem;   
+    max-width: max-content; 
+    float:right;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: .25rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,.1);
+    background-color:rgba(255, 5, 5, 0.452) !important;
+    opacity: 1;  
+}
+
+
+#mii {   
+  animation-duration: 1s;
+  animation-name: wobble;
+  animation-iteration-count: infinite;   
+}
+.izq{
+ float:left;
+}
+
+#mibtnav{   
+    animation-duration: 1s;
+    animation-name: shakeY;
+    animation-iteration-count: 20s;   
+  }

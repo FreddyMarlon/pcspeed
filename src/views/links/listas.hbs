@@ -1,0 +1,45 @@
+<div class="container p-4">
+     <div class="row">
+         {{#each links}}
+            <div class="col-md-3">
+                <div class="card mb-1">                   
+                  <div class="card-header">    
+                        <!-- <a href="{{url}}" target="_blank"></a>-->
+                        <h3 class="card-title text-uppercase micardtit ">
+                            Solicitud Nro: {{id}} </h3> 
+                         {{#ifCond edo '==' "p"}}
+                            <h5 class="miedo text-uppercase">ESTADO:<img src="/img/pendiente.png" width="20" height="20" alt="" align="right"></h5>
+                         {{/ifCond}} 
+                         {{#ifCond edo '==' "r"}}
+                            <h5 class="miedo text-uppercase">ESTADO:<img src="/img/solucion.png" width="20" height="20" alt="" align="right"></h5>                            
+                         {{/ifCond}} 
+                        
+                                           
+                  </div> 
+                  <div class="card-body">
+                         <img src="/img/solicitud.png" width="200" height="180" alt="" id="imgbody">
+                         <h5 class="mip text-uppercase">ASUNTO:</h5>                     
+                         <h5 class="mip2 text-uppercase">{{title}}</h5>
+                         
+                         <h5 class="mip text-uppercase">DESCRIPCIÓN:</h5>
+                         <h5 class="mip2 text-uppercase">{{descrip}}</h5> 
+                        
+                        <h5 class="mibt text-uppercase text-center">{{timeago  creado}}</h5>                                         
+                  </div>      
+                        
+                  <div class="card-footer text-muted">
+                         <a href="/enlaces/delete/{{id}}" class="btn btn-outline-danger mibt"><i class="fa fa-times-circle"></i> Eliminar</a>                        
+                         <a href="/enlaces/edit/{{id}}" class="btn btn-outline-success mibt"><i class="fa fa-edit"></i> Editar</a>                         
+                  </div>                      
+                </div>              
+            </div>
+         {{else}} 
+             <div class="col-md-4 mx-auto">
+                 <div class="card card-body text-center">
+                     <p>No existen enlaces guardados..!</p>
+                     <a href="/enlaces/add">Agregar</a>
+                 </div>
+             </div>
+         {{/each}}
+     </div>
+</div>

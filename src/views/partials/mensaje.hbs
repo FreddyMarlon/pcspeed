@@ -1,0 +1,24 @@
+{{#if message}} 
+    <div class="toast-info">	
+		<script>						     		
+		 toastr.info(contentHTML=`<p class="mitt">{{message}}</p>`);
+		</script>	
+	</div>
+{{/if}}
+
+{{#if success}} 
+	<div class="toast-success">
+	   <script>		
+		toastr.success(contentHTML=`<p class="mitt">{{success}}</p>`);		   
+	   </script>	 
+	</div>		  
+{{/if}}
+
+{{#if warning}} 
+	<div class="toast-error">
+	   <script>		   
+		   toastr.error(contentHTML=`<p class="mitt">{{warning}}</p>`);		   
+	   </script>	 
+	</div>		  
+{{/if}}
+		
