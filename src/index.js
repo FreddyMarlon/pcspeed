@@ -6,12 +6,12 @@ const session = require('express-session');
 const mysqlStore= require('express-mysql-session');
 const passport= require('passport');
 const {database}= require('./keys');
-var fs = require('fs');
+/*var fs = require('fs');*/
 var https = require('https');
-var options = {
+/*var options = {
    key:  fs.readFileSync('/node/firstweb/src/server.key', 'utf8'),
    cert: fs.readFileSync('/node/firstweb/src/server.cert', 'utf8')
- };
+ };*/
 var favicon = require('serve-favicon');
 
 
@@ -65,13 +65,13 @@ app.use('/enlaces',require('./routes/enlaces'));
 //archivos estaticos
 app.use(express.static(path.join(__dirname,'public')));
  
-const server = https.createServer(options,app).listen(app.get('port'), function(){
+const server = https.createServer(app).listen(app.get('port'), function(){
    console.log("Servidor Activo en Puerto: %s ", app.get('port'));
 }); 
 
-var io = require('socket.io')(server);
+/*var io = require('socket.io')(server);
 io.on('connection', function(socket){    
    if (socket.connected){      
     socket.emit('pushNotification', { success: true, msg: '¡Hola! bienvenid@. Inicia Sesión para realizar tus solicitudes de servicio.'});      
    }
-});
+});*/
