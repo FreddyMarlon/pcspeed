@@ -67,9 +67,9 @@ app.use('/enlaces',require('./routes/enlaces'));
 //archivos estaticos
 app.use(express.static(path.join(__dirname,'public')));
  
-const server = https.createServer(options,app).listen(app.get('port'), function(){
+const server = http.createServer(options,app).listen(app.get('port'), function(){
    console.log("Servidor Activo en Puerto: %s ", app.get('port'));
-}); 
+});
 
 /*var io = require('socket.io')(server);
 io.on('connection', function(socket){    
