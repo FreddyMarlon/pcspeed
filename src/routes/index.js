@@ -26,9 +26,9 @@ router.post('/enviar-correo', validar.validar(validar.validarcontactos), async(r
        <p>${mens}</p>
   `;           
   const transporter = nodemailer.createTransport({
-      host:'http://185.151.30.180/',
+      host:'smtp.stackmail.com',
       port: 465,
-      secure: false,
+      secure: true,
       auth:{
          user:'marlonf73@pcspeed.tech',         
          pass:'C@psule73'
@@ -40,7 +40,7 @@ router.post('/enviar-correo', validar.validar(validar.validarcontactos), async(r
 
   const info =await transporter.sendMail({
      from:"'Pcspeed Servidor' <marlonf73@pcspeed.tech>",
-     to: 'marlonf73@gmail.com',
+     to: 'pcspeed.tech.pzo@gmail.com',
      bcc: correostr,
      subject:'Solicitud de Cliente',
      html:contentHTML
