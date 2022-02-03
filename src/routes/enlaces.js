@@ -19,7 +19,7 @@ router.post('/add', isLoggedIn, async (req, res) => {
     };    
     await pool.query('INSERT INTO enlaces SET ?',[newlink]);     
     req.flash('success','Solicitud registrada correctamente');
-    res.redirect('/enlaces');    
+    res.redirect('./enlaces');    
 });
 
 router.get('/', isLoggedIn, async (req, res) => {     

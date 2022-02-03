@@ -72,9 +72,9 @@ const server = http.createServer(app).listen(app.get('port'), function(){
    console.log("Servidor Activo en Puerto: %s ", app.get('port'));
 });
 
-/*var io = require('socket.io')(server);
+var io = require('socket.io')(server);
 io.on('connection', function(socket){    
    if (socket.connected){      
     socket.emit('pushNotification', { success: true, msg: '¡Hola! bienvenid@. Inicia Sesión para realizar tus solicitudes de servicio.'});      
    }
-});*/
+});
