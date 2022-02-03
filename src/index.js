@@ -51,13 +51,21 @@ app.use(passport.session());
 app.use(favicon(__dirname + '/public/img/favicon.ico'));
 
 //variables globales
-app.use((req,res,next)=>{
+/*app.use((req,res,next)=>{
+      
+     next();
+}); */
+app.use(function (req, res, next) {
+   if (req.header('x-forwarded-proto') === 'http') {
+     res.redirect(301, 'https://' + req.hostname + req.url);
+     return
+   }
       app.locals.success = req.flash('success');
       app.locals.message = req.flash('message'); 
       app.locals.warning = req.flash('warning');     
       app.locals.user = req.user;
-     next();
-}); 
+   next()
+ });
 
 //rutas
 app.use(require('./routes/index'));
@@ -66,8 +74,9 @@ app.use('/enlaces',require('./routes/enlaces'));
 
 //archivos estaticos
 app.use(express.static(path.join(__dirname,'public')));
+
  
-const server = http.createServer(options,app).listen(app.get('port'), function(){
+const server = https.createServer(options,app).listen(app.get('port'), function(){
    console.log("Servidor Activo en Puerto: %s ", app.get('port'));
 });
 
