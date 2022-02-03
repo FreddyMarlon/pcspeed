@@ -6,14 +6,14 @@ const session = require('express-session');
 const mysqlStore= require('express-mysql-session');
 const passport= require('passport');
 const {database}= require('./keys');
-var fs = require('fs');
-var https = require('https');
+/*var fs = require('fs');
+var https = require('https');*/
 var http = require('http');
 
-var options = {
+/*var options = {
    key:  fs.readFileSync('/node/firstweb/src/server.key', 'utf8'),
    cert: fs.readFileSync('/node/firstweb/src/server.cert', 'utf8')
- };
+ };*/
 var favicon = require('serve-favicon');
 
 
@@ -51,21 +51,13 @@ app.use(passport.session());
 app.use(favicon(__dirname + '/public/img/favicon.ico'));
 
 //variables globales
-/*app.use((req,res,next)=>{
-      
-     next();
-}); */
-app.use(function (req, res, next) {
-   if (req.header('x-forwarded-proto') === 'http') {
-     res.redirect(301, 'https://' + req.hostname + req.url);
-     return
-   }
+app.use((req,res,next)=>{
       app.locals.success = req.flash('success');
       app.locals.message = req.flash('message'); 
       app.locals.warning = req.flash('warning');     
       app.locals.user = req.user;
-   next()
- });
+     next();
+}); 
 
 //rutas
 app.use(require('./routes/index'));
@@ -76,7 +68,7 @@ app.use('/enlaces',require('./routes/enlaces'));
 app.use(express.static(path.join(__dirname,'public')));
 
  
-const server = https.createServer(options,app).listen(app.get('port'), function(){
+const server = http.createServer(app).listen(app.get('port'), function(){
    console.log("Servidor Activo en Puerto: %s ", app.get('port'));
 });
 
