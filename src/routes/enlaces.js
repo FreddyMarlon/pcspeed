@@ -25,10 +25,10 @@ router.post('/add', isLoggedIn, async (req, res) => {
 router.get('/', isLoggedIn, async (req, res) => {     
     if (req.user.tipo =="I"){
             const links = await pool.query('SELECT * FROM enlaces WHERE usuario_id=?',[req.user.id]);
-            res.render('Links/listas',{links});
+            res.render('links/listas',{links});
     }else if (req.user.tipo =="A"){
         const links = await pool.query('SELECT * FROM enlaces');
-        res.render('Links/listas',{links});
+        res.render('links/listas',{links});
     }
     
 });
