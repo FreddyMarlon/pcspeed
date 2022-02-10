@@ -31,10 +31,13 @@
 					  {{#ifCond user.tipo '==' "A"}} 
 					    <a href="/profile" class="nav-link"><i class="fas fa-user-cog"></i> Perfil Admin</a>                        
 					  {{/ifCond}}	
-					</li>
+					</li>				
+					
 					<li class="nav-item">
 						<a href="/logout" class="nav-link"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
 					</li>
+					
+	                
 				{{else}}
 					<li class="nav-item">
 						<a href="/signin" class="nav-link"><i class="fas fa-sign-in-alt" style="color:green" id="mii"></i> Abrir Sesión</a>

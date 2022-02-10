@@ -8,7 +8,7 @@
                         <input type="text" value="{{link.title}}" class="form-control" name="title" placeholder="Título" autofocus>                        
                     </div>
                     <div class="form-group">   
-                          <input {{#ifCond user.tipo '==' "I"}} type="hidden" {{/ifCond}} {{#ifCond user.tipo '==' "A"}} type="text" pattern="p|r" {{/ifCond}} value="{{link.edo}}" class="form-control" name="edo" placeholder="Edo. p:pendiente r:solucionado" required>                          
+                          <input {{#ifCond user.tipo '==' "I"}} type="hidden" {{/ifCond}} {{#ifCond user.tipo '==' "A"}} type="text" pattern="p|e|r" {{/ifCond}} value="{{link.edo}}" class="form-control" name="edo" placeholder="Edo. p:pendiente e:en-proceso r:finalizado" required>                          
                     </div>
                     <div class="form-group">
                         <textarea name="descrip" rows="11" class="form-control" placeholder="Descripción">{{link.descrip}}</textarea>                       

@@ -38,7 +38,7 @@ app.set('view engine','.hbs');
 app.use(session({
    secret:'mysqlnodesession',
    resave: false,
-   saveUninitialized: false,
+   saveUninitialized: false,  
    store: new mysqlStore(database)
 }));
 

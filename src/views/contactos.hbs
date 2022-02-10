@@ -12,24 +12,29 @@
           		<div class="col-md-4 offset-md-4"> 
           			<div class="card animated flipInY">
           				<div class="card-header bg-dark text-white text-center">
+							<img src="/img/correo.png"  alt="loginuser" class="card-img-top mx-auto m-2 rounded-circle w-25">
           					<h3>Contáctanos</h3>
           				</div>
-          				<div class="card-body">
+          				<div class="card-body text-left">
           					<form action="/enviar-correo" method="POST" autocomplete="off">
 								<div class="form-group">
-          							<input  type="text"  pattern="[A-Za-z]{3,100}" class="form-control" name="nombre" placeholder="Nombre" autofocus required >
+									<span>Nombre:</span>
+          							<input  type="text"  pattern="[A-Za-z]{3,100}" class="form-control" name="nombre" autofocus required >
 									  
           						</div>
 								<div class="form-group">
-          							<input  type="text"   class="form-control" name="telefono" placeholder="Teléfono"  required >
+									<span>Teléfono:</span>
+          							<input  type="text"   class="form-control" name="telefono" required >
 									  
           						</div>  
           						<div class="form-group">
-          							<input  type="email"  class="form-control" name="correo"  size="41" placeholder="Correo Electrónico" required>
+									<span>Correo Electrónico:</span>  
+          							<input  type="email"  class="form-control" name="correo"  size="41" required>
 									
           						</div>     
           						<div class="form-group">
-          							<textarea type="text"  class="form-control" name="mens"  cols="30" rows="5" placeholder="Ingrese mensaje..." required></textarea>
+									<span>Mensaje:</span>  
+          							<textarea type="text"  class="form-control" name="mens"  cols="30" rows="5" required></textarea>
 									
           						</div>
           						<div class="form-group">          							

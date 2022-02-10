@@ -6,4 +6,11 @@ module.exports={
 		 database:'blo4ilbr1tvvnzsqprpx'
 
 	}
+	/*database:{
+		host:'localhost',
+		user:'root',
+		password:'',
+		database:'asispc'
+
+   }*/
 }

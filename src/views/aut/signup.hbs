@@ -4,19 +4,22 @@
             
             <div class="card text-center animated flipInY">
                 <div class="card-header bg-dark">
+                    <img src="/img/logoreg.png"  alt="loginuser" class="card-img-top mx-auto m-2 rounded-circle w-25">
                     <h3>Registrate</h3>
                 </div>
-                <div class="card-body">
-                    <img src="/img/logoreg.png"  alt="loginuser" class="card-img-top mx-auto m-2 rounded-circle w-25">
+                <div class="card-body text-left">                    
                     <form action="/signup" method="POST">
                       <div class="form-group">
-                          <input type="text"  name="nombre" placeholder="Nombre" class="form-control" autofocus required>
+                          <span>Nombre:</span>
+                          <input type="text"  name="nombre"  class="form-control" autofocus required>
                       </div>
                       <div class="form-group">
-                          <input type="text" name="usuario" placeholder="Usuario" class="form-control" required>
+                          <span>Usuario:</span>
+                          <input type="text" name="usuario"  class="form-control" required>
                       </div>
                       <div class="form-group">
-                          <input type="password" name="clave" placeholder="Clave" class="form-control" required>
+                          <span>Clave:</span>
+                          <input type="password" name="clave"  class="form-control" required>
                       </div>
                       <div class="form-check text-left">
                         <input class="form-check-input text-left"  type="radio" name="tipo" id="rd1" value="I" checked>

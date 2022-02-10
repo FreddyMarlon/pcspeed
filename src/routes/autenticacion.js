@@ -47,8 +47,9 @@ router.get('/profile', isLoggedIn,(req,res)=>{
 });
 
 router.get('/logout',isLoggedIn, (req,res)=>{
-     req.logOut();
-     res.redirect('/');
+     req.session.destroy();
+          res.redirect('/');        
 });
+
 
 module.exports = router;

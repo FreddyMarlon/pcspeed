@@ -121,6 +121,7 @@ h2{
 }
 h3{    
     color: white;
+
     font-size: 1rem;
     font-family: 'Oswald', sans-serif;
 }
@@ -147,6 +148,7 @@ h5{
     font-size: 16px;    
     font-family: 'Oswald', sans-serif;
  }
+ 
 .mih2s{
   color:white;  
   font-size: 4rem; 
@@ -247,7 +249,7 @@ input,textarea,button{
 } 
 .miedo{     
     color:black;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     font-family:'Open Sans Condensed', sans-serif;
 }
 .mip{     

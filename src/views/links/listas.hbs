@@ -8,10 +8,14 @@
                         <h3 class="card-title text-uppercase micardtit ">
                             Solicitud Nro: {{id}} </h3> 
                          {{#ifCond edo '==' "p"}}
-                            <h5 class="miedo text-uppercase">ESTADO:<img src="/img/pendiente.png" width="20" height="20" alt="" align="right"></h5>
+                            <h5 class="miedo text-uppercase" align="right"><img src="/img/pendiente.png" width="20" height="20" alt="" align="left">Pendiente</h5>
+                            
+                         {{/ifCond}} 
+                         {{#ifCond edo '==' "e"}}
+                            <h5 class="miedo text-uppercase" align="right"><img src="/img/enproceso.png" width="20" height="20" alt="" align="left">En proceso</h5>                           
                          {{/ifCond}} 
                          {{#ifCond edo '==' "r"}}
-                            <h5 class="miedo text-uppercase">ESTADO:<img src="/img/solucion.png" width="20" height="20" alt="" align="right"></h5>                            
+                            <h5 class="miedo text-uppercase" align="right"><img src="/img/solucion.png" width="20" height="20" alt="" align="left">Finalizado</h5>
                          {{/ifCond}} 
                         
                                            
