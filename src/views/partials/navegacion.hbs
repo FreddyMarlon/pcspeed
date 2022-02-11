@@ -24,15 +24,25 @@
 						 <a class="dropdown-item" href="/enlaces/add">Nueva</a>
 					 	</div>
 				    </li>
-					<li class="nav-item">
-                      {{#ifCond user.tipo '==' "I"}} 
+					<li class="nav-item">						
+                      {{#ifCond user.tipo '==' "Cliente"}} 						 				  
 						<a href="/profile" class="nav-link"><i class="fas fa-user"></i> Perfil</a>
                       {{/ifCond}}
-					  {{#ifCond user.tipo '==' "A"}} 
-					    <a href="/profile" class="nav-link"><i class="fas fa-user-cog"></i> Perfil Admin</a>                        
+					  {{#ifCond user.tipo '==' "Administrador"}} 
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button"
+						  	 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						     <i class="fas fa-folder-plus"></i> Administrador
+						  </a>
+						  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						    <a class="dropdown-item" href="/profile">Perfil</a>
+						  <div class="dropdown-divider"></div>
+						    <a class="dropdown-item" href="/signupadm">Nuevo Admin</a>
+					 	  </div>
+				    	</li>
+					    <!--<a href="/profile" class="nav-link"><i class="fas fa-user-cog"></i> Perfil Admin</a>!-->                        
 					  {{/ifCond}}	
-					</li>				
-					
+					</li>									
 					<li class="nav-item">
 						<a href="/logout" class="nav-link"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
 					</li>

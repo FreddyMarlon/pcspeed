@@ -17,7 +17,7 @@ router.post('/enviar-correo', validar.validar(validar.validarcontactos), async(r
   var correostr=req.body.correo;
 
   contentHTML=`
-       <h1>Información de Usuario</h1>
+       <h1>Información de Cliente</h1>
        <ul>
              <li>Nombre: ${nombre}</li>
              <li>Telefono: ${telefono}</li>
@@ -41,7 +41,7 @@ router.post('/enviar-correo', validar.validar(validar.validarcontactos), async(r
   const info =await transporter.sendMail({
      from:"'Pcspeed Servidor' <marlonf73@pcspeed.tech>",
      to: 'pcspeed.tech.pzo@gmail.com',
-     bcc: correostr,
+     //bcc: correostr,
      subject:'Solicitud de Cliente',
      html:contentHTML
   });

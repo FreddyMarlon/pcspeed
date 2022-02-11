@@ -1,13 +1,16 @@
 <div class="container p-2 ">
     <div class="row">
         <div class="col-md-4 mx-auto">           
-            <div class="card text-center">              
-                <div class="card-body p-4" id="miprofile"> 
-                    <div align="center"><img src="/img/userin.png" width="60" height="80"></div>                    
-                    <h2>Bienvenid@</h2>                    
-                    <h2>{{user.nombre}}</h2>
-                    <h2>Usuario: {{user.usuario}}</h2>                    
-                    <a href="/enlaces" class="btn btn-warning m-4 micardtit">Servicios Solicitados</a>
+            <div class="card text-center">  
+                <div class="card-header bg-dark">
+                    <img src="/img/userin.png"  class="card-img-top mx-auto m-2 rounded-circle w-25">
+                    <h3>Bienvenid@</h3>
+                </div>            
+                <div class="card-body p-4 text-left" id="miprofile">                     
+                    <span id="h9">Cliente: {{user.nombre}}</span><br>
+                    <span id="h9">Usuario: {{user.usuario}}</span><br>
+                    <br>                    
+                    <a href="/enlaces" class="btn btn-primary btn-block">Servicios Solicitados</a>
                 </div>
             </div>
         </div>

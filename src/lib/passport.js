@@ -28,16 +28,17 @@ passport.use('local.signup', new LocalStrategy({
       usernameField: 'usuario',
       passwordField: 'clave',
       tipoField: 'tipo',
+      tipoField: 'direccion',
       passReqToCallback: true
 }, async (req,usuario,clave,done) =>{
-    const {nombre,tipo} = req.body;
+    const {nombre,tipo,direccion} = req.body;
     const newUser={
           usuario,
           clave,
           nombre,
+          direccion,
           tipo
-    };
-    console.log(tipo);
+    };   
     newUser.clave= await helpers.encryptPassword(clave);
     const result= await pool.query('INSERT INTO usuarios SET ?',[newUser]);
     newUser.id =result.insertId;

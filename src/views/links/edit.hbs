@@ -5,10 +5,17 @@
              <div class="card-body">
                 <form action="/enlaces/edit/{{link.id}}" method="POST">
                     <div class="form-group">
-                        <input type="text" value="{{link.title}}" class="form-control" name="title" placeholder="Título" autofocus>                        
+                        <span>Titulo:</span>
+                        <input type="text" value="{{link.title}}" class="form-control" name="title" autofocus>                        
                     </div>
-                    <div class="form-group">   
-                          <input {{#ifCond user.tipo '==' "I"}} type="hidden" {{/ifCond}} {{#ifCond user.tipo '==' "A"}} type="text" pattern="p|e|r" {{/ifCond}} value="{{link.edo}}" class="form-control" name="edo" placeholder="Edo. p:pendiente e:en-proceso r:finalizado" required>                          
+                    <div class="form-group">                             
+                        {{#ifCond user.tipo '==' "Cliente"}}                        
+                            <input  type="hidden" class="form-control" name="edo">
+                        {{/ifCond}} 
+                        {{#ifCond user.tipo '==' "Administrador"}} 
+                            <span>Estado:</span>
+                            <input  type="text" pattern="p|e|r" value="{{link.edo}}" class="form-control" name="edo" required> 
+                        {{/ifCond}}                         
                     </div>
                     <div class="form-group">
                         <textarea name="descrip" rows="11" class="form-control" placeholder="Descripción">{{link.descrip}}</textarea>                       
