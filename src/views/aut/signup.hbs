@@ -8,7 +8,7 @@
                     <h3>Registrate</h3>
                 </div>
                 <div class="card-body text-left">                    
-                    <form action="/signup" method="POST">
+                    <form action="/signup" method="POST" autocomplete="off">
                       <div class="form-group">
                           <span>Nombre:</span>
                           <input type="text"  name="nombre"  class="form-control" autofocus required>
@@ -25,6 +25,14 @@
                           <span>Dirección:</span>
                           <input type="text" name="direccion"  class="form-control" required>
                       </div>
+                      <div class="form-group">
+                          <span>Teléfono:</span>
+                          <input type="text" name="telef"  class="form-control" required>
+                      </div>
+                      <div class="form-group">
+                          <span>Correo Electrónico:</span>
+                          <input type="email" name="correo"  class="form-control" required>
+                      </div>
                       {{#ifCond user.tipo '==' "Cliente"}}
                        <div class="form-group">              
                           <input type="text" name="tipo"  value="Cliente" class="form-control" hidden="true" readonly="readonly">
@@ -35,10 +43,7 @@
                           <input type="text" name="tipo"  value="Administrador" class="form-control" hidden="true" readonly="readonly">
                         </div>     
                       {{/ifCond}}
-                      {{#ifCond user.tipo '=='NULL}}
-                      <script>
-                        console.log('entrooo');
-                      </script>  
+                      {{#ifCond user.tipo '=='NULL}}                      
                        <div class="form-group">              
                           <input type="text" name="tipo"  value="Cliente" class="form-control" hidden="true" readonly="readonly">
                       </div>

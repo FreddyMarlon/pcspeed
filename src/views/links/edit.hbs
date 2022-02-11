@@ -1,24 +1,24 @@
 <div class="container p-4">
      <div class="row">
          
-         <div class="col-md-4m mx-auto">
-             <div class="card-body">
-                <form action="/enlaces/edit/{{link.id}}" method="POST">
+         <div class="col-md-4 mx-auto">
+             <div class="card-header bg-dark text-center">
+                    <img src="/img/logoreg.png"  class="card-img-top mx-auto m-2 rounded-circle w-25">
+                    <h3>Editar Solicitud</h3>
+             </div>
+             <div class="card-body bg-light text-left">                               
+                <form action="/enlaces/edit/{{link.id}}" method="POST" autocomplete="off">
                     <div class="form-group">
                         <span>Titulo:</span>
                         <input type="text" value="{{link.title}}" class="form-control" name="title" autofocus>                        
                     </div>
-                    <div class="form-group">                             
-                        {{#ifCond user.tipo '==' "Cliente"}}                        
-                            <input  type="hidden" class="form-control" name="edo">
-                        {{/ifCond}} 
-                        {{#ifCond user.tipo '==' "Administrador"}} 
-                            <span>Estado:</span>
-                            <input  type="text" pattern="p|e|r" value="{{link.edo}}" class="form-control" name="edo" required> 
-                        {{/ifCond}}                         
+                    <div class="form-group"> 
+                             <span>Estado:</span>                                               
+                             <input  type="text"  value="{{link.edo}}" class="form-control" name="edo" {{#ifCond user.tipo '==' "Cliente"}} readonly="readonly" {{/ifCond}} {{#ifCond user.tipo '==' "Administrador"}} pattern="p|e|r" required {{/ifCond}}>                                                     
                     </div>
                     <div class="form-group">
-                        <textarea name="descrip" rows="11" class="form-control" placeholder="Descripción">{{link.descrip}}</textarea>                       
+                        <span>Descripción:</span>
+                        <textarea name="descrip" rows="5" class="form-control">{{link.descrip}}</textarea>                       
                     </div>
                     <div class="form-group">
                         <button class="btn btn-primary btn-block">
@@ -26,7 +26,7 @@
                         </button>
                     </div>
                 </form>
-                </div>
+                
              </div>
          </div>
      </div>  

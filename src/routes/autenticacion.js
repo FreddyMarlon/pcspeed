@@ -46,7 +46,7 @@ router.get('/signin',isNotLoggedIn,(req,res)=>{
 });
 
 router.post('/signin',isNotLoggedIn,(req,res,next)=>{
-      passport.authenticate('local.signin',{
+      passport.authenticate('local.signin',{           
            successRedirect: '/profile',
            failureRedirect: '/signin',
            failureFlash: true
@@ -59,9 +59,9 @@ router.get('/profile', isLoggedIn,(req,res)=>{
 });
 
 
-router.get('/logout',isLoggedIn, (req,res)=>{
-     req.session.destroy();
-          res.redirect('/');        
+router.get('/logout',isLoggedIn, (req,res)=>{     
+     req.session.destroy();       
+     res.redirect('/');        
 });
 
 

@@ -29,14 +29,18 @@ passport.use('local.signup', new LocalStrategy({
       passwordField: 'clave',
       tipoField: 'tipo',
       tipoField: 'direccion',
+      tipoField: 'telef',
+      tipoField: 'correo',
       passReqToCallback: true
 }, async (req,usuario,clave,done) =>{
-    const {nombre,tipo,direccion} = req.body;
+    const {nombre,tipo,direccion,telef,correo} = req.body;
     const newUser={
           usuario,
           clave,
           nombre,
           direccion,
+          telef,
+          correo,
           tipo
     };   
     newUser.clave= await helpers.encryptPassword(clave);

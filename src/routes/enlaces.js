@@ -5,7 +5,7 @@ const {isLoggedIn} = require('../lib/validaruta');
 const {ifCond}= require('../lib/handlebars');
 
 
-router.get('/add',isLoggedIn,(req, res)=>{
+router.get('/add',isLoggedIn,(req, res)=>{   
    res.render('links/add');    
 });
 
@@ -25,9 +25,9 @@ router.post('/add', isLoggedIn, async (req, res) => {
 router.get('/', isLoggedIn, async (req, res) => {     
     if (req.user.tipo =="Cliente"){
             const links = await pool.query('SELECT * FROM enlaces WHERE usuario_id=?',[req.user.id]);
-            res.render('links/listas',{links});
+            res.render('links/listas2',{links});
     }else if (req.user.tipo =="Administrador"){
-        const links = await pool.query('SELECT * FROM enlaces');
+        const links = await pool.query('SELECT enlaces.id as id, enlaces.title as title,enlaces.edo as edo,enlaces.descrip as descrip,enlaces.creado as creado, usuarios.nombre as nombre,usuarios.telef as telef,usuarios.correo as correo FROM enlaces,usuarios  WHERE enlaces.usuario_id=usuarios.id ORDER BY enlaces.id');     
         res.render('links/listas',{links});
     }
     
@@ -40,7 +40,7 @@ router.get('/delete/:id', isLoggedIn, async (req, res) => {
    res.redirect('/enlaces');
 });
 
-router.get('/edit/:id', isLoggedIn, async (req, res) => {
+router.get('/edit/:id', isLoggedIn, async (req, res) => {    
     const {id}=req.params;
     const links = await pool.query('SELECT * FROM enlaces WHERE id= ?',[id]);
     res.render('links/edit',{link: links[0]});

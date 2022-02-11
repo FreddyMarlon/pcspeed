@@ -51,7 +51,7 @@ app.use(passport.session());
 app.use(favicon(__dirname + '/public/img/favicon.ico'));
 
 //variables globales
-app.use((req,res,next)=>{
+app.use((req,res,next)=>{   
       app.locals.success = req.flash('success');
       app.locals.message = req.flash('message'); 
       app.locals.warning = req.flash('warning');     
@@ -60,6 +60,7 @@ app.use((req,res,next)=>{
 }); 
 
 //rutas
+
 app.use(require('./routes/index'));
 app.use(require('./routes/autenticacion'));
 app.use('/enlaces',require('./routes/enlaces'));
