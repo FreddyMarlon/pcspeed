@@ -1,35 +1,35 @@
-<div class="container p-4">
+<div class="container p-2">
      <div class="row">
          {{#each links}}                
             <div class="col-md-3">
                 <div class="card mb-1">                   
                   <div class="card-header">    
                         <!-- <a href="{{url}}" target="_blank"></a>-->
-                        <h3 class="card-title text-uppercase text-center micardtit ">
-                            Solicitud Nro: {{id}} </h3> 
+                        <p id="h9" class="card-title text-underline text-uppercase text-center">
+                            Solicitud Nro: {{id}} </p> 
                          {{#ifCond edo '==' "p"}}
-                            <h3 class="miedo text-uppercase" align="right"><img src="/img/pendiente.png" width="20" height="20" alt="" align="left">Pendiente</h3>                            
+                            <h3 class="mip2 text-uppercase" align="right"><img src="/img/pendiente.png" width="20" height="20" alt="" align="left">Pendiente</h3>                            
                          {{/ifCond}} 
                          {{#ifCond edo '==' "e"}}
-                            <h3 class="miedo text-uppercase" align="right"><img src="/img/enproceso.png" width="20" height="20" alt="" align="left">En proceso</h3>                           
+                            <h3 class="mip2 text-uppercase" align="right"><img src="/img/enproceso.png" width="20" height="20" alt="" align="left">En proceso</h3>                           
                          {{/ifCond}} 
                          {{#ifCond edo '==' "r"}}
-                            <h3 class="miedo text-uppercase" align="right"><img src="/img/solucion.png" width="20" height="20" alt="" align="left">Finalizado</h3>
+                            <h3 class="mip2 text-uppercase" align="right"><img src="/img/solucion.png" width="20" height="20" alt="" align="left">Finalizado</h3>
                          {{/ifCond}} 
                   </div> 
-                  <div class="card-body">
-                         <img src="/img/solicitud.png" width="200" height="220" alt="" id="imgbody">
+                  <div class="card-body" id="imgbody">                         
                          <aside class="miedo">Asunto: {{title}}</aside>                     
                          <aside class="miedo ">Descripción: {{descrip}}</aside>                      
                   </div>                  
+                    <div>
                         <p class="card-footer">                             
-                            <h2 class="mibt text-center">{{timeago  creado}}</h2>                    
+                            <h2 class="mibt text-center">{{timeago creado}}</h2>                    
                             <aside align="center">
                                 <a href="/enlaces/delete/{{id}}" class="btn btn-outline-danger mibt"><i class="fa fa-times-circle"></i>Eliminar</a>                        
                                 <a href="/enlaces/edit/{{id}}" class="btn btn-outline-success mibt"><i class="fa fa-edit"></i>Editar</a>                      
                             </aside>    
                         </p>
-                                        
+                    </div>                    
                 </div>              
             </div>
          {{else}} 

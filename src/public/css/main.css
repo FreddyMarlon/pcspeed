@@ -236,10 +236,11 @@ input,textarea,button{
     background: white;
 }
 #imgbody{
-    position:absolute; 
-    top:5px;
-    left:0px;  
-    opacity: 0.3;
+    background-image: url('/img/solicitud3.png'); 
+    background-position: center center;
+    background-size: cover;
+    background-repeat: repeat;
+    opacity: 1;
 }
 .card{
     border-color: black;     
@@ -255,8 +256,10 @@ input,textarea,button{
 } 
 .miedo{     
     color: black;
-    font-size: 0.6rem;
-    font-family:'Open Sans Condensed', sans-serif;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif; 
+    /*font-family:'Open Sans Condensed', sans-serif;
+    font-family: 'Poiret One', cursive*/
 }
 .mip{     
     color:black;
@@ -267,8 +270,12 @@ input,textarea,button{
 }
 .mip2{    
     color: black;    
-    font-size: 0.8rem;    
-    font-family:'Open Sans Condensed', sans-serif;
+    font-size: 0.7rem;  
+    /*font-family: 'Poiret One', cursive;
+    font-family: 'Pompiere', cursive;*/
+    font-family: 'Anton', sans-serif;  
+    /*font-family:'Open Sans Condensed', sans-serif;*/
+    text-decoration: underline;
     opacity: 1 !important;
 }
 .mip3{
