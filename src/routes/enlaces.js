@@ -59,7 +59,7 @@ router.get('/edit/:id', isLoggedIn, async (req, res) => {
        res.redirect('/enlaces');
  });
  
- router.get('/precios',isNotLoggedIn, async (req, res) => {        
+ router.get('/precios', async (req, res) => {        
     const links = await pool.query('SELECT * FROM listaprecios');
     res.render('links/precios',{links});
     

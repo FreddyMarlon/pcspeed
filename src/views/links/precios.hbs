@@ -3,26 +3,25 @@
      		<div class="col"> 
       			<div class="card animated flipInY">
           				<div class="card-header bg-dark text-white text-center">
-       							<img src="/img/precio.png"  width="100">
-          					<h3>Lista de Precios</h3>                    
+         							<img src="/img/precio.png"  width="70">
+            					<h3>Lista de Precios</h3>                    
+                      <br>
           				</div>
-                  <div class="text-right">                                   
-                      <aside>
-                         <a class="btn btn-primary" href="/" role="button">Salir</a>
-                         <a class="btn btn-primary" href="#" role="button">Actualizar</a>                                                
-                      </aside>
-          				</div>	                  	                  
-          				<div class="card-body">
-                       <div class="form-group">
-						              <span>Ingrese Cotización actual del $:</span>
-          				    	  <input  type="number" step="0.01" name="tasa" value="4.68" class="form-control" autofocus required>								                           
-                        </div>                          
-          				</div>
-                  <div>
-                    <table class="table table-hover">
+                  <div class="row-2">
+                      <div class="col-4 text-left">                        
+                            <span>Ingrese tasa actual del $:</span>
+                            <input  type="number"  step="0.01" name="tasa" value="4.68" class="form-control" autofocus required>								                           
+                      </div>       
+                      <div class="col text-right"> 
+                        <br>                       
+                            <a class="btn btn-success" href="#" role="button">Actualizar</a>
+                            <a class="btn btn-primary" href="/" role="button">Salir</a>                                 
+                      </div>
+                  </div>    
+                  <div class="card-body">         			                  
+                    <table class="table  table-hover table-responsive">
                         <thead>
-                          <tr>
-                           <th scope="col"></th>
+                          <tr>                          
                            <th scope="col">Cod.</th>
                            <th scope="col">Servicio</th>
                            <th scope="col">Descripción</th>
@@ -31,10 +30,9 @@
                            <th scope="col">Categoría</th>
                           </tr>
                         </thead>
-                        <tbody>
+                      <tbody>
                         {{#each links}}  
                             <tr>
-                                <th scope="row"></th>
                                 <td class="mip">{{id}}</td>
                                 <td class="mip">{{nom}}</td>
                                 <td class="mip">{{des}}</td>                                
@@ -42,9 +40,10 @@
                                 <td class="mip">{{preciob}}</td>
                                 <td class="mip">{{categoria}}</td>
                             </tr>
-                          {{/each}}      
-                        </tbody>
+                        {{/each}}      
+                      </tbody>
                      </table>
+                    </div> 
                   </div>          													   					     
   				      </div>
    			    </div>          			
