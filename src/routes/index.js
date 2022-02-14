@@ -10,8 +10,6 @@ router.get('/', async(req,res) =>{
 });
 
 
-
-
 router.post('/enviar-correo', validar.validar(validar.validarcontactos), async(req,res) =>{ 
   const {nombre,telefono,correo,mens}=req.body;  
   var correostr=req.body.correo;

@@ -39,8 +39,7 @@
 						  <div class="dropdown-divider"></div>
 						    <a class="dropdown-item" href="/signupadm">Nuevo Admin</a>
 					 	  </div>
-				    	</li>
-					    <!--<a href="/profile" class="nav-link"><i class="fas fa-user-cog"></i> Perfil Admin</a>!-->                        
+				    	</li>					    
 					  {{/ifCond}}	
 					</li>									
 					<li class="nav-item">
@@ -58,8 +57,20 @@
 				{{/if}}
 				
 				<li class="nav-item">
-					<a class="nav-link" href="/#acercade"><i class="fas fa-building"></i> Acerca de</a>
+					
+				        <li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button"
+						  	 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						     <i class="fas fa-folder-plus"></i> Servicios
+						  </a>
+						  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						    <a class="dropdown-item" href="/enlaces/precios">Lista de Precios</a>
+						  </div>
+				    	</li>					
 				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/#acercade"><i class="fas fa-building"></i> Acerca de</a>
+				</li>			
 				<li class="nav-item">
 					<a class="nav-link" href="/contactos"><i class="fas fa-envelope"></i> Contacto</a>
 				</li>			

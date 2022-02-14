@@ -6,45 +6,23 @@ helpers.timeago = (timestamp) => {
     return format(timestamp,'es');     
 };
 
-/*helpers.fecha = (timestamp) => {
-   const fec = new Date(timestamp);
-
-let hLocal = fec.getHours();
-let hUTC = fec.getUTCHours();
-
-return hUTC; // mostrará 10 para zonas horarias negativas
-
-//console.log(`El día de la fecha UTC es: ${diaUTC}`)
-
-// mostrará la fecha en la zona horaria del cliente
-//return fec.toString();
-
-// mostrará la fecha en la zona horaria UTC
-//return fec.toUTCString();
-}*/
-
 helpers.fecha = (timestamp) => {   
-  var a = timestamp;
-  var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  var year = a.getFullYear();
-  var month = months[a.getMonth()];
-  var date = a.getDate();
-  var hour = a.getHours();
-  var min = a.getMinutes();
-  var sec = a.getSeconds();  
-  var timelocal = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec;
+  var t = timestamp; 
+  var a= new Date(); 
+  var b= new Date((t.getTime()-(a.getTimezoneOffset()*60000)));
 
-  var yearu = a.getUTCFullYear();
-  var monthu = months[a.getUTCMonth()];
-  var dateu = a.getUTCDate();
-  var houru = a.getUTCHours();
-  var minu = a.getUTCMinutes();
-  var secu = a.getUTCSeconds()*60000 ;
-    
-  var timeUTC = dateu + ' ' + monthu + ' ' + yearu + ' ' + houru + ':' + minu + ':' + secu;
-   
-  //return timeUTC-timelocal;
-  return a.getTimezoneOffset();
+  var months = ['Enero','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic']; 
+  var year = b.getFullYear();
+  var month = months[b.getMonth()];  
+  var date = b.getDate();    
+  var hour = b.getHours();
+  var min = b.getMinutes();
+  var sec = b.getSeconds();  
+  var suffex = (hour >= 12)? 'PM' : 'AM';  
+  hour = (hour > 12)? hour -12 : hour;  
+  hour = (hour == '00')? 12 : hour;
+  var timelocal = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ' ' + suffex;
+  return timelocal;
 }
 
 helpers.ifCond = (v1, operator, v2, options) =>{

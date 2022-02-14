@@ -5,8 +5,6 @@ const router= express.Router();
 const passport= require('passport');
 const {isLoggedIn, isNotLoggedIn} = require('../lib/validaruta');
 
-
-
 router.get('/clientes.js', ( req, res)=>{
      res.render('clientes');
 });
@@ -14,7 +12,6 @@ router.get('/clientes.js', ( req, res)=>{
 router.get('/contactos', ( req, res)=>{
      res.render('contactos');
 });
-
 
 router.get('/correok',  ( req, res)=>{
      res.render('correok');

@@ -1,7 +1,7 @@
 const express=require ('express');
 const router= express.Router();
 const pool = require('../database');
-const {isLoggedIn} = require('../lib/validaruta');
+const {isLoggedIn,isNotLoggedIn} = require('../lib/validaruta');
 const {ifCond}= require('../lib/handlebars');
 
 
@@ -55,8 +55,14 @@ router.get('/edit/:id', isLoggedIn, async (req, res) => {
             descrip
         };
        await pool.query('UPDATE enlaces SET ? WHERE id=?',[newlink,id]);
-       req.flash('success','Solicitud actualizado correctamente');
+       req.flash('success','Solicitud actualizada correctamente');
        res.redirect('/enlaces');
  });
+ 
+ router.get('/precios',isNotLoggedIn, async (req, res) => {        
+    const links = await pool.query('SELECT * FROM listaprecios');
+    res.render('links/precios',{links});
+    
+ }); 
 
 module.exports = router;
