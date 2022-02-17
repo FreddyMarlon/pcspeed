@@ -10,7 +10,7 @@
                 <form action="/enlaces/edit/{{link.id}}" method="POST" autocomplete="off" name="editarlis">
                     <div class="form-group">
                         <span>Titulo:</span>
-                        <input type="text" value="{{link.title}}" class="form-control" name="title" autofocus>                        
+                        <input type="text" id="mayus" value="{{link.title}}" class="form-control" name="title" autofocus>                        
                     </div>
                     <div class="form-group"> 
                             <select class="form-select" aria-label="Estado:" name="edo" {{#ifCond user.tipo '==' "Cliente"}}hidden="true"{{/ifCond}}>    
@@ -21,7 +21,7 @@
                     </div>
                     <div class="form-group">
                         <span>Descripción:</span>
-                        <textarea name="descrip" rows="5" class="form-control">{{link.descrip}}</textarea>                       
+                        <textarea name="descrip" id="mayus" rows="5" class="form-control">{{link.descrip}}</textarea>                       
                     </div>
                     <div class="form-group">
                         <button class="btn btn-primary btn-block">

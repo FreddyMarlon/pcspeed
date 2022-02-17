@@ -22,6 +22,57 @@ router.post('/add', isLoggedIn, async (req, res) => {
     res.redirect('/enlaces');    
 });
 
+router.get('/buscars',isLoggedIn,(req, res)=>{   
+    res.render('links/buscars');    
+});
+
+router.post('/buscars', isLoggedIn, async (req, res) => {            
+    const {tsol} = req.body;
+    const str1 = "%";
+    const str2 = "%";   
+    const newlink = {        
+       tsol
+    };    
+    if (req.user.tipo =="Cliente"){
+          if(tsol=='Finalizado'){      
+                const links = await pool.query('SELECT enlaces.id as id,enlaces.title,enlaces.edo,enlaces.descrip,enlaces.usuario_id, enlaces.creado,usuarios.nombre,usuarios.tipo,usuarios.telef, usuarios.correo FROM enlaces,usuarios WHERE enlaces.usuario_id=usuarios.id AND usuarios.id=? AND enlaces.edo="r" ORDER BY enlaces.id',[req.user.id]);
+                res.render('links/listas3',{links});
+          }else if(tsol=='Procesando'){      
+                const links = await pool.query('SELECT enlaces.id as id,enlaces.title,enlaces.edo,enlaces.descrip,enlaces.usuario_id, enlaces.creado,usuarios.nombre,usuarios.tipo,usuarios.telef, usuarios.correo FROM enlaces,usuarios WHERE enlaces.usuario_id=usuarios.id AND usuarios.id=? AND enlaces.edo="e" ORDER BY enlaces.id',[req.user.id]);
+                res.render('links/listas3',{links});
+          }else if (tsol=='Pendiente'){  
+                const links = await pool.query('SELECT enlaces.id as id,enlaces.title,enlaces.edo,enlaces.descrip,enlaces.usuario_id, enlaces.creado,usuarios.nombre,usuarios.tipo,usuarios.telef, usuarios.correo FROM enlaces,usuarios WHERE enlaces.usuario_id=usuarios.id AND usuarios.id=? AND enlaces.edo="p" ORDER BY enlaces.id',[req.user.id]);
+                res.render('links/listas3',{links});
+          }else if (!isNaN(tsol)) {
+                const links = await pool.query('SELECT enlaces.id as id,enlaces.title,enlaces.edo,enlaces.descrip,enlaces.usuario_id, enlaces.creado,usuarios.nombre,usuarios.tipo,usuarios.telef, usuarios.correo FROM enlaces,usuarios WHERE enlaces.usuario_id=usuarios.id AND usuarios.id=? AND enlaces.id=? ORDER BY enlaces.id',[req.user.id,tsol]);
+                res.render('links/listas3',{links});
+          }else{  
+            const links = await pool.query('SELECT enlaces.id as id,enlaces.title,enlaces.edo,enlaces.descrip,enlaces.usuario_id, enlaces.creado,usuarios.nombre,usuarios.tipo,usuarios.telef, usuarios.correo FROM enlaces,usuarios WHERE enlaces.usuario_id=usuarios.id AND usuarios.id=? AND enlaces.edo=? ORDER BY enlaces.id',[req.user.id,tsol]);
+            res.render('links/listas3',{links});
+          }  
+    }else if (req.user.tipo =="Administrador"){
+        if(tsol=='Finalizado'){ 
+            const links = await pool.query('SELECT enlaces.id as id,enlaces.title,enlaces.edo,enlaces.descrip,enlaces.usuario_id, enlaces.creado,usuarios.nombre,usuarios.tipo,usuarios.telef, usuarios.correo FROM enlaces,usuarios WHERE enlaces.usuario_id=usuarios.id AND enlaces.edo="r" ORDER BY enlaces.id');
+            res.render('links/listas4',{links});
+        }else if (tsol=='Procesando'){
+            const links = await pool.query('SELECT enlaces.id as id,enlaces.title,enlaces.edo,enlaces.descrip,enlaces.usuario_id, enlaces.creado,usuarios.nombre,usuarios.tipo,usuarios.telef, usuarios.correo FROM enlaces,usuarios WHERE enlaces.usuario_id=usuarios.id AND enlaces.edo="e" ORDER BY enlaces.id');
+            res.render('links/listas4',{links});
+        }else if (tsol=='Pendiente'){  
+            const links = await pool.query('SELECT enlaces.id as id,enlaces.title,enlaces.edo,enlaces.descrip,enlaces.usuario_id, enlaces.creado,usuarios.nombre,usuarios.tipo,usuarios.telef, usuarios.correo FROM enlaces,usuarios WHERE enlaces.usuario_id=usuarios.id AND enlaces.edo="p" ORDER BY enlaces.id');
+            res.render('links/listas4',{links});
+        }else if (!isNaN(tsol)) { 
+            const links = await pool.query('SELECT enlaces.id as id,enlaces.title,enlaces.edo,enlaces.descrip,enlaces.usuario_id, enlaces.creado,usuarios.nombre,usuarios.tipo,usuarios.telef, usuarios.correo FROM enlaces,usuarios WHERE enlaces.usuario_id=usuarios.id AND enlaces.id=? ORDER BY enlaces.id',[tsol]);
+            res.render('links/listas4',{links});
+        }else{          
+                          await pool.query('CREATE VIEW vista_usuarios AS SELECT * FROM usuarios where nombre LIKE ?',[str1.concat(tsol).concat(str2)]);
+            const links = await pool.query('Select * from vista_usuarios,enlaces where vista_usuarios.id=enlaces.usuario_id order by enlaces.id');         
+            res.render('links/listas4',{links});
+            await pool.query('DROP VIEW vista_usuarios');
+        }    
+    }    
+});
+
+
 router.get('/', isLoggedIn, async (req, res) => {     
     if (req.user.tipo =="Cliente"){
             const links = await pool.query('SELECT * FROM enlaces WHERE usuario_id=?',[req.user.id]);
