@@ -10,11 +10,12 @@ router.get('/add',isLoggedIn,(req, res)=>{
 });
 
 router.post('/add', isLoggedIn, async (req, res) => {
-    const { title,edo,descrip} = req.body;
+    const { title,edo,descrip,creado} = req.body;
     const newlink = {
         title,
         edo,
-        descrip,
+        descrip,        
+        creado,
         usuario_id: req.user.id
     };    
     await pool.query('INSERT INTO enlaces SET ?',[newlink]);     

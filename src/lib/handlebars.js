@@ -6,22 +6,22 @@ helpers.timeago = (timestamp) => {
     return format(timestamp,'es');     
 };
 
-helpers.fecha = (timestamp) => {   
-  var t = timestamp; 
-  var a= new Date(); 
-  var b= new Date((t.getTime()-(a.getTimezoneOffset()*60000)));
 
+
+helpers.fecha = (timestamp) => {   
+  let t = timestamp; 
   var months = ['Enero','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic']; 
-  var year = b.getFullYear();
-  var month = months[b.getMonth()];  
-  var date = b.getDate();    
-  var hour = b.getHours();
-  var min = b.getMinutes();
-  var sec = b.getSeconds();  
+  var year = t.getFullYear();
+  var month = months[t.getMonth()];  
+  var date = t.getDate();    
+  var hour = t.getHours();
+  var min = t.getMinutes();
+  var sec = t.getSeconds();  
   var suffex = (hour >= 12)? 'PM' : 'AM';  
   hour = (hour > 12)? hour -12 : hour;  
   hour = (hour == '00')? 12 : hour;
   var timelocal = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ' ' + suffex;
+
   return timelocal;
 }
 
