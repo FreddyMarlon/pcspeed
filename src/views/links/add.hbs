@@ -17,16 +17,15 @@
                             <div class="form-group">
                                 <span>Descripción:</span>
                                 <textarea name="descrip" id="mayus" rows="5" class="form-control"></textarea>                       
-                            </div>  
-                            
+                            </div>                             
                             <div class="form-group">
                                <span>Fecha y Hora:</span>
                                 <div class="input-group date">
                                     <input type="datetime-local" class="form-control"  name="creado" required>                                    
                                 </div>
-                            </div>       
+                            </div>                            
                             <div class="form-group">                                
-                                <button class="btn btn-primary btn-block">
+                                <button class="btn btn-primary btn-block" onclick="javascript:this.form.submit();this.disabled= true;">
                                 Enviar
                                 </button>
                             </div>
