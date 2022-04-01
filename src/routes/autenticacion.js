@@ -55,10 +55,9 @@ router.get('/profile', isLoggedIn,(req,res)=>{
      res.render('profile'); 
 });
 
-
 router.get('/logout',isLoggedIn, (req,res)=>{     
      req.session.destroy();       
-     res.redirect('/');        
+     res.redirect('/signin');      
 });
 
 
