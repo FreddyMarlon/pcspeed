@@ -5,13 +5,13 @@ display: none
 /*Letras y fondos*/
 body {
     
-    background-image: url('/img/fondocuerpo4.png');
-    background-repeat: repeat;    
-   /* background: linear-gradient(180deg, rgb(250, 250, 252) 38%, rgb(250, 250, 252) 38%, rgb(1, 1, 29) 38%);
+   /* background-image: url('/img/fondocuerpo4.png');
+    background-repeat: repeat;   */
+    background: linear-gradient(180deg, rgb(250, 250, 252) 38%, rgb(250, 250, 252) 38%, rgb(1, 1, 29) 38%);
     background-position: center center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size:cover;
-    overflow: hidden;*/
+    
 }
 /*boton de top de pagina*/
 .boton-subir{
@@ -139,8 +139,9 @@ h5{
 }
 .h7{
     color: white;
-    font-size: 14px;    
+    font-size: 1rem;    
     font-family: 'Oswald', sans-serif;
+   
  }
 .h8{
     color: white;
@@ -202,11 +203,15 @@ input,textarea,button{
     font-size: 1rem; 
     font-family: 'Oswald', sans-serif;    
 }
-
-.navbar{        
-    font-size: 0.8rem;  
-    font-family: 'Oswald', sans-serif;    
+.navbar {
+    font-size: 1rem;  
+    font-family: 'Oswald', sans-serif;  
+    background-color: #010414;
+    position:-webkit-sticky;
+    
 }
+
+
 
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -214,11 +219,11 @@ input,textarea,button{
 }
 #navbarNav li:hover > a {
     color:orange;
-    font-size: 0.8rem;    
+    font-size: 1rem;    
     font-family: 'Oswald', sans-serif;
 }
 .nav-item{       
-    font-size: 0.8rem;   
+    font-size: 1rem;   
     font-family: 'Oswald', sans-serif;
 }
 .nav-tabs .nav-link.active,
@@ -228,9 +233,13 @@ input,textarea,button{
     font-family: 'Oswald', sans-serif;     
 }
 .tab-pane{
-    color: #020005;       
+    color: #010005;           
     font-size: 0.8rem;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Pompiere', cursive;
+    /*font-family: 'Poiret One', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;*/
+    font-family: 'Anton', sans-serif;
+    /*font-family: 'Oswald', sans-serif;*/
 }
 .btn{
     font-size: 1rem;
