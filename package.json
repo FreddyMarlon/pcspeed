@@ -6,10 +6,12 @@
   "engines": {
     "node": "10.16.1",
     "npm": "6.9.0"     
+    
   },
   "scripts": {    
     "start": "node src/index.js",
     "dev": "nodemon ./src"
+    
   },
   "keywords": [],
   "author": "",
@@ -42,5 +44,9 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
+    
   }
+  
+    
+  
 }
