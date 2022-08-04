@@ -5,12 +5,12 @@ display: none
 /*Letras y fondos*/
 body {
     
-   /* background-image: url('/img/fondocuerpo4.png');
-    background-repeat: repeat;   */
-    background: linear-gradient(180deg, rgb(250, 250, 252) 38%, rgb(250, 250, 252) 38%, rgb(1, 1, 29) 38%);
+    background-image: url('/img/fondocuerpo4.png');
+    background-repeat: repeat;   
+   /* background: linear-gradient(180deg, rgb(250, 250, 252) 38%, rgb(250, 250, 252) 38%, rgb(1, 1, 29) 38%);
     background-position: center center;
     background-repeat: repeat;
-    background-size:cover;
+    background-size:cover;*/
     
 }
 /*boton de top de pagina*/
@@ -234,7 +234,7 @@ input,textarea,button{
 }
 .tab-pane{
     color: #010005;           
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-family: 'Pompiere', cursive;
     /*font-family: 'Poiret One', cursive;
     font-family: 'Open Sans Condensed', sans-serif;*/
