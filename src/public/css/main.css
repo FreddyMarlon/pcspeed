@@ -62,7 +62,7 @@ body {
 #headp{
     position: absolute;
 	top:10rem;
-    width: 96.66666666666666%;
+    
     background-color: rgb(247, 246, 245);
 }
 .carousel-indicators li {  
