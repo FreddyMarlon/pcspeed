@@ -235,7 +235,7 @@ input,textarea,button{
 .tab-pane{
     color: #010005;           
     font-size: 0.7rem;
-    font-family: 'Pompiere', cursive;
+    /*font-family: 'Pompiere', cursive;*/
     /*font-family: 'Poiret One', cursive;
     font-family: 'Open Sans Condensed', sans-serif;*/
     font-family: 'Anton', sans-serif;
