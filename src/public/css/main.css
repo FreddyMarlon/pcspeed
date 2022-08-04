@@ -233,6 +233,7 @@ input,textarea,button{
     font-family: 'Oswald', sans-serif;     
 }
 .tab-pane{
+    margin-top: 2%;
     color: #010005;           
     font-size: 0.7rem;
     /*font-family: 'Pompiere', cursive;*/
