@@ -233,15 +233,20 @@ input,textarea,button{
     font-size: 1rem;   
     font-family: 'Oswald', sans-serif;    
 }
+
+.navtabs:hover,
+.navtabs:focus {     
+    color:#010414; 
+}
 .nav-tabs .nav-link.active,
 .show>.nav-link{
     background:  #010414 !important;  
-    color:#2196F3; 
+    color:white; 
     font-family: 'Oswald', sans-serif;     
 }
 .tab-pane{
     margin-top: 2%;
-    color: #010005;           
+    color: #010414;           
     font-size: 0.7rem;
     /*font-family: 'Pompiere', cursive;*/
     /*font-family: 'Poiret One', cursive;
