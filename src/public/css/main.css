@@ -233,12 +233,9 @@ input,textarea,button{
 .nav-item{       
     font-size: 1rem;   
     font-family: 'Oswald', sans-serif;    
+    color:green;
 }
 
-.nav-item:hover,
-.nav-item:focus {     
-    color:#010414 !important; 
-}
 .nav-tabs .nav-link.active,
 .show>.nav-link{
     background:  #010414 !important;  
