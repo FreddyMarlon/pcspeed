@@ -15,7 +15,7 @@ body {
 }
 /*boton de top de pagina*/
 .aclarar-img{
-    filter: brightness(150%); 
+    filter: brightness(20%); 
  }
 .boton-subir{
   display: none;
