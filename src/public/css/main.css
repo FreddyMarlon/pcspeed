@@ -214,6 +214,7 @@ input,textarea,button{
     font-size: 1rem;  
     font-family: 'Oswald', sans-serif;  
     background-color:#010414;
+    color:white;
     position:-webkit-sticky;
     
 }
@@ -225,7 +226,7 @@ input,textarea,button{
      color:orange !important;
 }
 #navbarNav li:hover > a {
-    color:white;
+    color:orange;
     font-size: 1rem;    
     font-family: 'Oswald', sans-serif;
 }
