@@ -15,7 +15,10 @@ body {
 }
 /*boton de top de pagina*/
 .aclarar-img{
-    filter: brightness(50%); 
+    background: linear-gradient(180deg, rgb(250, 250, 252) 38%, rgb(250, 250, 252) 38%, rgb(1, 1, 29) 38%);
+    background-position: center center;
+    background-repeat: repeat;
+    background-size:cover;     
  }
 .boton-subir{
   display: none;
