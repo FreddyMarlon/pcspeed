@@ -233,7 +233,7 @@ input,textarea,button{
 .nav-item{       
     font-size: 1rem;   
     font-family: 'Oswald', sans-serif;    
-    color:green;
+    background-color: dodgerblue;
 }
 
 .nav-tabs .nav-link.active,
