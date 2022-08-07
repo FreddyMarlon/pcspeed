@@ -213,8 +213,7 @@ input,textarea,button{
 .navbar {
     font-size: 1rem;  
     font-family: 'Oswald', sans-serif;  
-    background-color:#010414;
-    color:white;
+    background-color:#010414;    
     position:-webkit-sticky;
     
 }
@@ -233,6 +232,7 @@ input,textarea,button{
 .nav-item{       
     font-size: 1rem;   
     font-family: 'Oswald', sans-serif;
+    color:white;
 }
 .nav-tabs .nav-link.active,
 .show>.nav-link{
