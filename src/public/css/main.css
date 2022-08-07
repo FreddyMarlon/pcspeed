@@ -236,7 +236,7 @@ input,textarea,button{
 
 .navtabs:hover,
 .navtabs:focus {     
-    color:#010414; 
+    color:#010414 !important; 
 }
 .nav-tabs .nav-link.active,
 .show>.nav-link{
