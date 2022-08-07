@@ -225,7 +225,7 @@ input,textarea,button{
      color:orange !important;
 }
 #navbarNav li:hover > a {
-    color:orange;
+    color:white;
     font-size: 1rem;    
     font-family: 'Oswald', sans-serif;
 }
@@ -236,7 +236,7 @@ input,textarea,button{
 .nav-tabs .nav-link.active,
 .show>.nav-link{
     background:  #010414 !important;
-    color:white !important;
+    color:white;
     font-family: 'Oswald', sans-serif;     
 }
 .tab-pane{
