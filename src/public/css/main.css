@@ -265,7 +265,7 @@ input,textarea,button{
     /*background-size: contain;*/
     background-size: 210px 165px;
     background-repeat: no-repeat;
-    opacity: 1;
+    opacity: 10;
 }
 .card{
     border-color: black;     
