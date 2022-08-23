@@ -139,7 +139,7 @@ h4{
 }
 h5{
     color: white;
-    font-size: 2rem;    
+    font-size: 1.5rem;    
     font-family: 'Oswald', sans-serif;
    
 }
@@ -224,22 +224,22 @@ input,textarea,button{
 
 .navbar-brand:hover,
 .navbar-brand:focus {
-     color:orangered !important;
+     color:orange !important;
 }
 #navbarNav li:hover > a {
-    color:orangered;
-    font-size: 1.5rem;    
+    color:orange;
+    font-size: 1rem;    
     font-family: 'Oswald', sans-serif;
 }
 .nav-item{       
-    font-size: 1.5rem;   
+    font-size: 1rem;   
     font-family: 'Oswald', sans-serif;        
 }
 
 .nav-tabs .nav-link.active,
 .show>.nav-link{
     /*background:  #010414 !important;  */
-    color:yellow; 
+    color:black; 
     /*font-family: 'Oswald', sans-serif;     */
 }
 .tab-pane{
