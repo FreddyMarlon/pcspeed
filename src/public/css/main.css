@@ -212,7 +212,7 @@ input,textarea,button{
     font-size: 1.5rem;  
     /*font-family: 'Oswald', sans-serif;  */
    /* background-color:#010414;*/
-    color: white !important; 
+   /* color: white !important; */
     position:-webkit-sticky;
     
 }
@@ -221,10 +221,10 @@ input,textarea,button{
 
 .navbar-brand:hover,
 .navbar-brand:focus {
-     color:orange !important;
+     color:white !important;
 }
 #navbarNav li:hover > a {
-    color:orange;
+    color:white;
     font-size: 1rem;    
     /*font-family: 'Oswald', sans-serif;*/
 }
@@ -241,7 +241,7 @@ input,textarea,button{
 }
 .tab-pane{
     margin-top: 2%;
-    color: #010414;           
+    color:white;           
     font-size: 1rem;
     /*font-family: 'Pompiere', cursive;*/
     /*font-family: 'Poiret One', cursive;
