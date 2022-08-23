@@ -6,7 +6,7 @@ display: none
 body {
     
     background-image: url('/img/fondoweb.png');
-    background-repeat: no-repeat;   
+    background-repeat: repeat;   
    /* background: linear-gradient(180deg, rgb(250, 250, 252) 38%, rgb(250, 250, 252) 38%, rgb(1, 1, 29) 38%);
     background-position: center center;
     background-repeat: repeat;
@@ -227,19 +227,19 @@ input,textarea,button{
      color:orangered !important;
 }
 #navbarNav li:hover > a {
-    color:white;
-    font-size: 1rem;    
+    color:orangered;
+    font-size: 1.5rem;    
     font-family: 'Oswald', sans-serif;
 }
 .nav-item{       
-    font-size: 1rem;   
-    /*font-family: 'Oswald', sans-serif;        */
+    font-size: 1.5rem;   
+    font-family: 'Oswald', sans-serif;        
 }
 
 .nav-tabs .nav-link.active,
 .show>.nav-link{
-    background:  #010414 !important;  
-    color:white; 
+    /*background:  #010414 !important;  */
+    color:yellow; 
     /*font-family: 'Oswald', sans-serif;     */
 }
 .tab-pane{
