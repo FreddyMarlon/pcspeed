@@ -123,19 +123,17 @@ footer{
     width: 100%;
     height: 100%;    
 }
-h2{
-    font-family: 'Oswald', sans-serif;
-}
+
 h3{    
     color: white;
     font-size: 1rem;
-    font-family: 'Oswald', sans-serif;
+   /* font-family: 'Oswald', sans-serif;*/
 }
 h4{
     /*font-family: 'Open Sans Condensed', sans-serif;*/
     /*font-family: 'Anton', sans-serif;*/
     color: white;
-    font-family: 'Oswald', sans-serif;
+    /*font-family: 'Oswald', sans-serif;*/
     /*font-family: 'Poiret One', cursive;*/
     /*font-family: 'Pompiere', cursive;*/  
 }
@@ -147,23 +145,23 @@ h5{
 .h7{
     color: white;
     font-size: 1rem;    
-    font-family: 'Oswald', sans-serif;
+    /*font-family: 'Oswald', sans-serif;*/
    
  }
 .h8{
     color: white;
     font-size: 16px;    
-    font-family: 'Oswald', sans-serif;
+    /*font-family: 'Oswald', sans-serif;*/
  }
  .h9{
     color: black;
     font-size: 16px;    
-    font-family: 'Oswald', sans-serif;
+    /*font-family: 'Oswald', sans-serif;*/
  }
  .h10{
     color: orange;
     font-size: 18.5px;    
-    font-family: 'Oswald', sans-serif;
+    /*font-family: 'Oswald', sans-serif;*/
  }
  
  
@@ -171,50 +169,50 @@ h5{
   color:white;  
   font-size: 4rem; 
   opacity: 1;
-  font-family: 'Oswald', sans-serif; 
+  /*font-family: 'Oswald', sans-serif; */
 }
 .mih3s{
     color:white;    
     font-size:1.5rem; 
     opacity: 1;
-    font-family: 'Oswald', sans-serif;   
+    /*font-family: 'Oswald', sans-serif;   */
 }
 .mih2e{    
     color:orange;    
     font-size: 2rem;   
     opacity: 1;
-    font-family: 'Oswald', sans-serif;    
+    /*font-family: 'Oswald', sans-serif;    */
 }.mih3e{    
     color:white;    
     font-size: 1rem; 
     opacity: 1;
-    font-family: 'Oswald', sans-serif;
+    /*font-family: 'Oswald', sans-serif;*/
 }
 .mih2c{
     color:orange;
     font-size: 2rem; 
     opacity: 1;
-    font-family: 'Oswald', sans-serif;  
+    /*font-family: 'Oswald', sans-serif;  */
 }
 .mih3c{
     color:white;    
     font-size: 1rem; 
     opacity: 1;
-    font-family: 'Oswald', sans-serif;        
+    /*font-family: 'Oswald', sans-serif;        */
 }
 p{
     font-size: 1rem;
-    font-family: 'Oswald', sans-serif;
+    /*font-family: 'Oswald', sans-serif;*/
 }
 input,textarea,button{
     font-size: 1rem; 
-    font-family: 'Oswald', sans-serif;    
+    /*font-family: 'Oswald', sans-serif;    */
 }
 .navbar {
-    font-size: 1rem;  
-    font-family: 'Oswald', sans-serif;  
+    font-size: 1.5rem;  
+    /*font-family: 'Oswald', sans-serif;  */
    /* background-color:#010414;*/
-    color: white !important; 
+    /*color: white !important; */
     position:-webkit-sticky;
     
 }
@@ -228,18 +226,18 @@ input,textarea,button{
 #navbarNav li:hover > a {
     color:orange;
     font-size: 1rem;    
-    font-family: 'Oswald', sans-serif;
+    /*font-family: 'Oswald', sans-serif;*/
 }
 .nav-item{       
     font-size: 1rem;   
-    font-family: 'Oswald', sans-serif;        
+    /*font-family: 'Oswald', sans-serif;        */
 }
 
 .nav-tabs .nav-link.active,
 .show>.nav-link{
     background:  #010414 !important;  
     color:white; 
-    font-family: 'Oswald', sans-serif;     
+    /*font-family: 'Oswald', sans-serif;     */
 }
 .tab-pane{
     margin-top: 2%;
@@ -249,11 +247,11 @@ input,textarea,button{
     /*font-family: 'Poiret One', cursive;
     font-family: 'Open Sans Condensed', sans-serif;*/
     /*font-family: 'Anton', sans-serif;*/
-    font-family: 'Oswald', sans-serif;
+    /*font-family: 'Oswald', sans-serif;*/
 }
 .btn{
     font-size: 1rem;
-    font-family: 'Oswald', sans-serif;    
+    /*font-family: 'Oswald', sans-serif;    */
 }
 
 #miprofile{
@@ -277,19 +275,19 @@ input,textarea,button{
     
     color:black;   
     font-size: 0.6rem;    
-    font-family:'Open Sans Condensed', sans-serif;
+    /*font-family:'Open Sans Condensed', sans-serif;*/
 } 
 .miedo{     
     color: black;
     font-size: 12px;
-    font-family: 'Anton', sans-serif;
+    /*font-family: 'Anton', sans-serif;*/
     /*font-family:'Open Sans Condensed', sans-serif;
     font-family: 'Poiret One', cursive*/
 }
 .mip{     
     color:black;
     font-size: 0.6rem;
-    font-family:'Open Sans Condensed', sans-serif; 
+    /*font-family:'Open Sans Condensed', sans-serif; */
     opacity:1 !important;
 }
 .mip2{    
@@ -297,7 +295,7 @@ input,textarea,button{
     font-size: 0.7rem;  
     /*font-family: 'Poiret One', cursive;
     font-family: 'Pompiere', cursive;*/
-    font-family: 'Anton', sans-serif;  
+    /*font-family: 'Anton', sans-serif;  */
     /*font-family:'Open Sans Condensed', sans-serif;*/
     text-decoration: underline;
     opacity: 1 !important;
@@ -305,22 +303,22 @@ input,textarea,button{
 .mip3{
     color:red;    
     font-size: 0.6rem;
-    font-family:'Open Sans Condensed', sans-serif;
+    /*font-family:'Open Sans Condensed', sans-serif;*/
 }
 .mip4{
     color:green;    
     font-size: 0.6rem;
-    font-family:'Open Sans Condensed', sans-serif;   
+    /*font-family:'Open Sans Condensed', sans-serif;   */
 }
 .mibt{
     color:black;    
     font-size: 0.5rem;
-    font-family:'Open Sans Condensed', sans-serif;         
+    /*font-family:'Open Sans Condensed', sans-serif;*/         
 }
 .mitt{
     color:white;
     font-size: 1rem;    
-    font-family:'Oswald', sans-serif;      
+    /*font-family:'Oswald', sans-serif;*/
 }
 
 .toast-info{
