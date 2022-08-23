@@ -239,7 +239,7 @@ input,textarea,button{
 .nav-tabs .nav-link.active,
 .show>.nav-link{
     /*background:  !important;  */
-    background-color: yellow;
+    background-color: violet;
     color:black; 
     /*font-family: 'Oswald', sans-serif;     */
 }
