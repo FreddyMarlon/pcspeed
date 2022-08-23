@@ -217,7 +217,9 @@ input,textarea,button{
     position:-webkit-sticky;
     
 }
-
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    }
 
 
 .navbar-brand:hover,
