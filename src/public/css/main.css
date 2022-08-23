@@ -6,7 +6,7 @@ display: none
 body {
     
     background-image: url('/img/fondoweb.png');
-    background-repeat: repeat;   
+    background-repeat: no-repeatrepeat;   
    /* background: linear-gradient(180deg, rgb(250, 250, 252) 38%, rgb(250, 250, 252) 38%, rgb(1, 1, 29) 38%);
     background-position: center center;
     background-repeat: repeat;
