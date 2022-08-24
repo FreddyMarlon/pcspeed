@@ -228,7 +228,7 @@ input,textarea,button{
 }
 #navbarNav li:hover > a {
     color:orange;
-    font-size: 1rem;    
+    font-size: 2rem;    
     font-family: 'Oswald', sans-serif;
 }
 
@@ -244,8 +244,8 @@ input,textarea,button{
 
 .nav-tabs .nav-link.active,
 .show>.nav-link{    
-    background: white!important;      
-    color:black;    
+    background: black!important;      
+    color:orange;    
 }
 .tab-pane{
     margin-top: 2%;
