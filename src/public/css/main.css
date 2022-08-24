@@ -236,13 +236,21 @@ input,textarea,button{
     font-family: 'Oswald', sans-serif;        
 }
 
+.nav-tabs .nav-item .nav-link {
+    background-color:black;
+    color: grey;
+  }
+  
+  .nav-tabs .nav-item .nav-link.active {
+    color: orange;
+  }
 
-.nav-tabs .nav-link.active,
+/*.nav-tabs .nav-link.active,
 .show>.nav-link{
     background: black!important;      
     color:orange; 
-    /*font-family: 'Oswald', sans-serif;     */
-}
+    font-family: 'Oswald', sans-serif;     
+}*/
 .tab-pane{
     margin-top: 2%;
     /*background-color: red;*/
