@@ -240,6 +240,7 @@ input,textarea,button{
     font-size: 1rem;   
     color:grey;
     border-color: black;
+   
    /* font-family: 'Oswald', sans-serif; */      
 }
 
@@ -247,11 +248,13 @@ input,textarea,button{
 
 .nav-tabs .nav-link.active,
 .show>.nav-link{
+    border-color: black;
     background: black!important;      
     color:orange; 
    
 }
 .tab-pane{
+    border-color: black;
     margin-top: 2%;
     /*background-color: red;*/
     color:white;           
