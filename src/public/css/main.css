@@ -238,14 +238,13 @@ input,textarea,button{
 
 .nav-tabs .nav-link.active,
 .show>.nav-link{
-    /*background:  !important;  */
-    background-color: violet;
+    background: white !important;      
     color:black; 
     /*font-family: 'Oswald', sans-serif;     */
 }
 .tab-pane{
     margin-top: 2%;
-    background-color: red;
+    /*background-color: red;*/
     color:black;           
     font-size: 1rem;
     /*font-family: 'Pompiere', cursive;*/
