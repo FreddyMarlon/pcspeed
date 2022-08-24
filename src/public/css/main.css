@@ -238,23 +238,16 @@ input,textarea,button{
 }
 .nav-item{       
     font-size: 1rem;   
-    color:grey;
-    border-color: black;
-   
+    color:grey;    
    /* font-family: 'Oswald', sans-serif; */      
 }
 
-
-
 .nav-tabs .nav-link.active,
-.show>.nav-link{
-    border-color: black;
-    background: black!important;      
-    color:orange; 
-   
+.show>.nav-link{    
+    background: white!important;      
+    color:black;    
 }
 .tab-pane{
-    border-color: black;
     margin-top: 2%;
     /*background-color: red;*/
     color:white;           
