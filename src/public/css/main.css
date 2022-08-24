@@ -237,12 +237,12 @@ input,textarea,button{
 }
 
 .nav-tabs .nav-item .nav-link {
-    background-color:black;
-    color: grey;
+    background-color:black !important;
+    color: grey !important;
   }
   
   .nav-tabs .nav-item .nav-link.active {
-    color: orange;
+    color: orange !important;
   }
 
 /*.nav-tabs .nav-link.active,
