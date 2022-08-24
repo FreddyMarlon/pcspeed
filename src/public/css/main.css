@@ -4,9 +4,9 @@ display: none
 }
 /*Letras y fondos*/
 body {
-    
-    background-image: url('/img/fondocuerpo4.png');
-    background-repeat: repeat;   
+     background-color: white;
+   /* background-image: url('/img/fondocuerpo4.png');*/
+    /*background-repeat: repeat;   */
    /* background: linear-gradient(180deg, rgb(250, 250, 252) 38%, rgb(250, 250, 252) 38%, rgb(1, 1, 29) 38%);
     background-position: center center;
     background-repeat: repeat;
