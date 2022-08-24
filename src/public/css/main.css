@@ -235,15 +235,12 @@ input,textarea,button{
     font-size: 1rem;   
     font-family: 'Oswald', sans-serif;        
 }
-.nav-tabs .nav-item .nav-link {
-    background-color: black;
-    color: orange;
-  }
+
 
 .nav-tabs .nav-link.active,
 .show>.nav-link{
-    background: white!important;      
-    color:blue; 
+    background: black!important;      
+    color:orange; 
     /*font-family: 'Oswald', sans-serif;     */
 }
 .tab-pane{
