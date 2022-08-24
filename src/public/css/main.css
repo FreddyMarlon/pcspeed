@@ -6,7 +6,7 @@ display: none
 body {
      
    /* background-image: url('/img/fondocuerpo4.png');*/
-    background-repeat: repeat; 
+    background-color: black;    
     /*  background: linear-gradient(180deg, rgb(17, 17, 17) 38%, rgb(250, 250, 252) 38%, rgb(12, 12, 12) 38%);
     background-position: center center;
     background-repeat: repeat;
@@ -210,7 +210,7 @@ input,textarea,button{
     /*font-family: 'Oswald', sans-serif;    */
 }
 .navbar {
-    font-size: 2rem;  
+    font-size: 1.5rem;  
     font-family: 'Oswald', sans-serif;  
    /* background-color:#010414;*/
    /* color: white !important; */
@@ -219,7 +219,7 @@ input,textarea,button{
 }
 .navbar-light .navbar-nav .nav-link {
     color: white;
-    font-size: 2rem;  
+    font-size: 1.5rem;  
     }
 
 
@@ -229,7 +229,7 @@ input,textarea,button{
 }
 #navbarNav li:hover > a {
     color:orange;
-    font-size: 2rem;    
+    font-size: 1.5rem;    
     font-family: 'Oswald', sans-serif;
 }
 
