@@ -127,7 +127,7 @@ footer{
 h3{    
     color: white;
     font-size: 1rem;
-   /* font-family: 'Oswald', sans-serif;*/
+    font-family: 'Oswald', sans-serif;
 }
 h4{
     /*font-family: 'Open Sans Condensed', sans-serif;*/
@@ -139,30 +139,30 @@ h4{
 }
 h5{
     color: white;
-    font-size: 1.7rem;    
+    font-size: 2rem;    
     font-family: 'Oswald', sans-serif;
    
 }
 .h7{
     color: white;
     font-size: 1rem;    
-    /*font-family: 'Oswald', sans-serif;*/
+    font-family: 'Oswald', sans-serif;
    
  }
 .h8{
     color: white;
     font-size: 16px;    
-    /*font-family: 'Oswald', sans-serif;*/
+    font-family: 'Oswald', sans-serif;
  }
  .h9{
     color: black;
     font-size: 16px;    
-    /*font-family: 'Oswald', sans-serif;*/
+    font-family: 'Oswald', sans-serif;
  }
  .h10{
     color: orange;
     font-size: 18.5px;    
-    /*font-family: 'Oswald', sans-serif;*/
+    font-family: 'Oswald', sans-serif;
  }
  
  
@@ -170,44 +170,44 @@ h5{
   color:white;  
   font-size: 4rem; 
   opacity: 1;
-  /*font-family: 'Oswald', sans-serif; */
+  font-family: 'Oswald', sans-serif; 
 }
 .mih3s{
     color:white;    
     font-size:1.5rem; 
     opacity: 1;
-    /*font-family: 'Oswald', sans-serif;   */
+    font-family: 'Oswald', sans-serif;   
 }
 .mih2e{    
     color:orange;    
     font-size: 2rem;   
     opacity: 1;
-    /*font-family: 'Oswald', sans-serif;    */
+    font-family: 'Oswald', sans-serif;    
 }.mih3e{    
     color:white;    
     font-size: 1rem; 
     opacity: 1;
-    /*font-family: 'Oswald', sans-serif;*/
+    font-family: 'Oswald', sans-serif;
 }
 .mih2c{
     color:orange;
     font-size: 2rem; 
     opacity: 1;
-    /*font-family: 'Oswald', sans-serif;  */
+    font-family: 'Oswald', sans-serif;  
 }
 .mih3c{
     color:white;    
     font-size: 1rem; 
     opacity: 1;
-    /*font-family: 'Oswald', sans-serif;        */
+    font-family: 'Oswald', sans-serif;        
 }
 p{
     font-size: 1rem;
-    /*font-family: 'Oswald', sans-serif;*/
+    font-family: 'Oswald', sans-serif;
 }
 input,textarea,button{
     font-size: 1rem; 
-    /*font-family: 'Oswald', sans-serif;    */
+    font-family: 'Oswald', sans-serif;    
 }
 .navbar {
     font-size: 1.5rem;  
