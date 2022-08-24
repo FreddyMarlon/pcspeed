@@ -7,7 +7,7 @@ body {
      
    /* background-image: url('/img/fondocuerpo4.png');*/
     /*background-color: black;*/
-    background: linear-gradient(180deg, rgb(26, 25, 25) 10%, rgb(250, 250, 252) 56%, rgb(12, 12, 12) 34%);
+    background: linear-gradient(180deg, rgb(26, 25, 25) 10%, rgb(250, 250, 252) 20%, rgb(12, 12, 12) 70%);
     background-position: center center;
     background-repeat:no-repeat;
     background-size:cover;
