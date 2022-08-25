@@ -138,9 +138,10 @@ h4{
     /*font-family: 'Pompiere', cursive;*/  
 }
 h5{
-    color: black;
+    color: white;
     font-size: 30px;    
-    font-family: 'Oswald', sans-serif;
+    /*font-family: 'Oswald', sans-serif;*/
+    font-family: 'Poiret One', cursive;
    
 }
 .h7{
