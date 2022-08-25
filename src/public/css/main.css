@@ -232,7 +232,7 @@ input,textarea,button{
     font-size: 18px;    
     font-family: 'Oswald', sans-serif;
 }
-#navbarDropdown> li > a {
+#navbarDropdown > a {
     color:red !important;
 }
 .nav-item:hover,
