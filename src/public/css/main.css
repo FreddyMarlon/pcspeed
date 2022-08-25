@@ -242,7 +242,8 @@ input,textarea,button{
     color:black;    
    /* font-family: 'Oswald', sans-serif; */      
 }
-.navbarDropdown{
+.navbarDropdown:hover,
+.navbarDropdown:focus{
     background-color: white;
     color:black;
 }
