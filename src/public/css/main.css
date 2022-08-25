@@ -232,6 +232,11 @@ input,textarea,button{
     font-size: 18px;    
     font-family: 'Oswald', sans-serif;
 }
+.navbar .navbar-nav > li.open > a:hover,
+.navbar .navbar-nav > li.open > a:focus {
+  background-color: teal;
+  color: #fff;
+}
 
 .nav-item:hover,
 .nav-item:focus {
@@ -245,7 +250,7 @@ input,textarea,button{
 
 .nav-tabs .nav-link.active,
 .show>.nav-link{    
-    background: rgb(75, 74, 74)!important;      
+    background:black !important;      
     color:orange;    
 }
 .tab-pane{
