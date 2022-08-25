@@ -7,7 +7,7 @@ body {
      
    /* background-image: url('/img/fondocuerpo4.png');*/
     /*background-color: black;*/
-    background: linear-gradient(180deg, rgb(26, 25, 25) 25%, rgb(242, 242, 243) 15%,rgb(12, 12, 12)15%);
+    background: linear-gradient(180deg, rgb(26, 25, 25) 20%, rgb(242, 242, 243) 20%,rgb(12, 12, 12)40%);
     background-position: center center;
     background-repeat:repeat;
     background-size:cover;
@@ -244,8 +244,8 @@ input,textarea,button{
 }
 .navbarDropdown:hover,
 .navbarDropdown:focus{
-    background-color: white;
-    color:black;
+    background-color: white !important;
+    color:black !important;
 }
 
 .nav-tabs .nav-link.active,
