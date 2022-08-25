@@ -7,7 +7,7 @@ body {
      
    /* background-image: url('/img/fondocuerpo4.png');*/
     /*background-color: black;*/
-    background: linear-gradient(180deg, rgb(26, 25, 25) 15%, rgb(248, 106, 11) 20%,rgb(12, 12, 12)40%);
+    background: linear-gradient(180deg, rgb(26, 25, 25) 10%, rgb(248, 106, 11) 20%,rgb(12, 12, 12)40%);
     background-position: center center;
     background-repeat:repeat;
     background-size:cover;
@@ -238,14 +238,14 @@ input,textarea,button{
      color:orange !important;
 }
 .nav-item{       
-    font-size: 1rem;   
+    font-size: 1rem;     
     color:black;    
    /* font-family: 'Oswald', sans-serif; */      
 }
 
 .nav-tabs .nav-link.active,
 .show>.nav-link{    
-    background:black !important;      
+    background:rgb(26, 25, 25) !important;      
     color:orange;    
 }
 .tab-pane{
