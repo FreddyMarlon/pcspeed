@@ -256,7 +256,7 @@ input,textarea,button{
     font-size: 1rem;
     /*font-family: 'Pompiere', cursive;*/
     /*font-family: 'Poiret One', cursive;
-    font-family: 'Open Sans Condensed', sans-serif;*/
+   /*font-family: 'Open Sans Condensed', sans-serif;*/
     /*font-family: 'Anton', sans-serif;*/
     /*font-family: 'Oswald', sans-serif;*/
 }
@@ -291,11 +291,13 @@ input,textarea,button{
 .miedo{     
     color: black;
     font-size: 12px;    
+    font-family: 'Open Sans Condensed', sans-serif;
     
 }
 .mip{     
     color:black;
     font-size: 0.6rem;    
+    font-family: 'Open Sans Condensed', sans-serif;
     opacity:1 !important;
 }
 .mip2{    
