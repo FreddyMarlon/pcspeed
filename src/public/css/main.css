@@ -286,19 +286,20 @@ input,textarea,button{
     
     color:black;   
     font-size: 0.6rem;    
-    font-family:'Open Sans Condensed', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    /*font-family:'Open Sans Condensed', sans-serif;*/
 } 
 .miedo{     
     color: black;
     font-size: 12px;
-    /*font-family: 'Anton', sans-serif;*/
-    font-family:'Open Sans Condensed', sans-serif;
+    font-family: 'Anton', sans-serif;    
     /*font-family: 'Poiret One', cursive*/
 }
 .mip{     
     color:black;
     font-size: 0.6rem;
-    font-family:'Open Sans Condensed', sans-serif; 
+    font-family: 'Oswald', sans-serif;
+    /*font-family:'Open Sans Condensed', sans-serif; */
     opacity:1 !important;
 }
 .mip2{    
@@ -307,24 +308,24 @@ input,textarea,button{
     /*font-family: 'Poiret One', cursive;
     /*font-family: 'Pompiere', cursive;*/
     /*font-family: 'Anton', sans-serif;  */
-    font-family:'Open Sans Condensed', sans-serif;
+    font-family: 'Oswald', sans-serif;
     text-decoration: underline;
     opacity: 1 !important;
 }
 .mip3{
     color:red;    
     font-size: 0.6rem;
-    font-family:'Open Sans Condensed', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 .mip4{
     color:green;    
     font-size: 0.6rem;
-    font-family:'Open Sans Condensed', sans-serif;   
+    font-family: 'Oswald', sans-serif;
 }
 .mibt{
     color:black;    
     font-size: 0.5rem;
-    font-family:'Open Sans Condensed', sans-serif;         
+    font-family: 'Oswald', sans-serif;
 }
 .mitt{
     color:white;
