@@ -300,6 +300,7 @@ input,textarea,button{
 .mip{     
     color:black;
     font-size: 0.6rem;       
+    font-family: 'Anton', sans-serif;
     opacity:1 !important;
 }
 
@@ -308,7 +309,7 @@ input,textarea,button{
     font-size: 0.7rem;  
     /*font-family: 'Poiret One', cursive;
     /*font-family: 'Pompiere', cursive;*/
-    /*font-family: 'Anton', sans-serif;  */
+    font-family: 'Anton', sans-serif;  
     /* font-family: 'Oswald', sans-serif;*/
     text-decoration: underline;
     opacity: 1 !important;
