@@ -269,19 +269,16 @@ input,textarea,button{
     background: white;
 }
 
-#imgbody{      
-    /*background: linear-gradient(180deg, rgb(15, 15, 15) 5%,rgb(15, 15, 15)5%);   */
-    border-width: 10px;
-    border-color: black;
+#imgbody{         
+   /* background: linear-gradient(180deg, rgb(15, 15, 15) 7%,rgb(15, 15, 15)7%);*/
+   /*background-image: url('/img/solicitud.png');*/
     background-size: contain;
     background-size: 260px 200px;
     background-repeat: no-repeat;
     opacity: 1;
 }
 .card{
-    border-color: black; 
-    /*background-image: url('/img/solicitud.png');*/
-    
+        border-color: black; 
 }
 
 
@@ -290,6 +287,7 @@ input,textarea,button{
 }
 
 .micardtit{         
+    background-color: rgb(173, 207, 238);
     color:black;   
     font-size: 1rem;  
     font-family: 'Anton', sans-serif;
