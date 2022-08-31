@@ -156,8 +156,7 @@ h5{
  }
  .h9{
     color: black;
-    font-size: 16px;  
-    font-family: 'Open Sans Condensed', sans-serif;      
+    font-size: 16px;      
  }
  
  .h10{
@@ -204,6 +203,7 @@ h5{
 }
 p{
     font-size: 1rem;
+    font-family: 'Open Sans Condensed', sans-serif;
     
 }
 input,textarea,button{
