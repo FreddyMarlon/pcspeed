@@ -281,27 +281,28 @@ input,textarea,button{
     border-color: black;      
 }
 
+
 .col {
     display: inline-block;
 }
 
-.micardtit{     
-    
+.micardtit{         
     color:black;   
     font-size: 0.6rem;  
-        
-    
+    font-family: 'Open Sans Condensed', sans-serif;
 } 
+
 .miedo{     
     color: black;
-    font-size: 12px;       
-    
+    font-size: 12px;           
 }
+
 .mip{     
     color:black;
     font-size: 0.6rem;       
     opacity:1 !important;
 }
+
 .mip2{    
     color: black;    
     font-size: 0.7rem;  
@@ -312,6 +313,7 @@ input,textarea,button{
     text-decoration: underline;
     opacity: 1 !important;
 }
+
 .mip3{
     color:red;    
     font-size: 0.6rem;
