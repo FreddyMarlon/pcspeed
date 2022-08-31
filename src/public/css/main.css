@@ -299,14 +299,14 @@ input,textarea,button{
 
 .mip{     
     color:black;
-    font-size: 0.6rem;       
+    font-size: 1rem;       
     font-family: 'Anton', sans-serif;
     opacity:1 !important;
 }
 
 .mip2{    
     color: black;    
-    font-size: 0.7rem;  
+    font-size: 1rem;  
     /*font-family: 'Poiret One', cursive;
     /*font-family: 'Pompiere', cursive;*/
     font-family: 'Anton', sans-serif;  
@@ -317,17 +317,17 @@ input,textarea,button{
 
 .mip3{
     color:red;    
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 
 }
 .mip4{
     color:green;    
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 
 }
 .mibt{
     color:black;    
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     font-family: 'Anton', sans-serif;  
 
 }
