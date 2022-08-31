@@ -270,7 +270,8 @@ input,textarea,button{
 }
 
 #imgbody{
-    background-image: url('/img/solicitud2.png'); 
+    background-color: lightgray;
+   /* background-image: url('/img/solicitud2.png'); */
     background-position: left;
     /*background-size: contain;*/
     background-size: 400px 200px;
