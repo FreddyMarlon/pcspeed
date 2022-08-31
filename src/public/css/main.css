@@ -272,7 +272,7 @@ input,textarea,button{
     background-image: url('/img/solicitud.png'); 
     background-position: left center;
     /*background-size: contain;*/
-    background-size: 210px 165px;
+    background-size: 210px 300px;
     background-repeat: no-repeat;
     opacity: 1;
 }
