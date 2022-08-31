@@ -279,7 +279,10 @@ input,textarea,button{
 .card{
     border-color: black; 
     background-image: url('/img/solicitud.png');      
-    opacity: 0.5;
+    background-size: contain;
+    background-size: 250px 250px;
+    background-repeat: no-repeat;
+    opacity: 0.9;
 }
 
 
