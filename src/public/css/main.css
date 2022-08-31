@@ -271,7 +271,7 @@ input,textarea,button{
 
 #imgbody{
    
-    background-image: url('/img/fondocard.png'); 
+    background-image: url('/img/fondocard2.png'); 
     background-position: left;
     /*background-size: contain;*/
     background-size: 400px 200px;
@@ -280,7 +280,7 @@ input,textarea,button{
 }
 .card{
     border-color: black;      
-    background-color: white;
+  
 }
 
 
