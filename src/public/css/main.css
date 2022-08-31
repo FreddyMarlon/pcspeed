@@ -300,8 +300,8 @@ input,textarea,button{
 .mip{     
     color:black;
     font-size: 1rem;       
-    font-family: 'Open Sans Condensed', sans-serif;
-    opacity:1 !important;
+    font-family: 'Anton', sans-serif;
+    opacity:0.5 !important;
 }
 
 .mip2{    
