@@ -270,7 +270,8 @@ input,textarea,button{
 }
 
 #imgbody{      
-    background: linear-gradient(180deg, rgb(255, 124, 1) 10%,rgb(252, 251, 251)10%);   
+    /*background: linear-gradient(180deg, rgb(15, 15, 15) 5%,rgb(15, 15, 15)5%);   */
+    border-color: black;
     background-size: contain;
     background-size: 260px 200px;
     background-repeat: no-repeat;
