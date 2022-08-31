@@ -279,6 +279,7 @@ input,textarea,button{
 }
 .card{
         border-color: black; 
+        background: linear-gradient(180deg, rgb(3, 45, 78) 35%,rgb(246, 247, 248)35%);
 }
 
 
@@ -286,8 +287,7 @@ input,textarea,button{
     display: inline-block;
 }
 
-.micardtit{         
-    background-color: rgb(173, 207, 238);
+.micardtit{             
     color:black;   
     font-size: 1rem;  
     font-family: 'Anton', sans-serif;
