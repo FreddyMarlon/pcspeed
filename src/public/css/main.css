@@ -279,7 +279,7 @@ input,textarea,button{
 }
 .card{
         border-color: black; 
-        background: linear-gradient(180deg, rgb(175, 211, 240) 30%,rgb(246, 247, 248)35%);
+        background: linear-gradient(180deg, rgb(175, 211, 240) 20%,rgb(246, 247, 248)35%);
 }
 
 
@@ -294,7 +294,7 @@ input,textarea,button{
 } 
 
 .miedo{     
-    color: black;
+    color: grey;
     font-size: 14px;   
     font-family: 'Anton', sans-serif;
     opacity:1 !important;        
