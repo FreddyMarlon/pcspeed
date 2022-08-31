@@ -287,19 +287,18 @@ input,textarea,button{
     color:black;   
     font-size: 0.6rem;    
     font-family: 'Oswald', sans-serif;
-    /*font-family:'Open Sans Condensed', sans-serif;*/
+    
 } 
 .miedo{     
     color: black;
     font-size: 12px;
-    font-family: 'Anton', sans-serif;    
-    /*font-family: 'Poiret One', cursive*/
+    font-family: 'Oswald', sans-serif; 
+    
 }
 .mip{     
     color:black;
     font-size: 0.6rem;
-    font-family: 'Oswald', sans-serif;
-    /*font-family:'Open Sans Condensed', sans-serif; */
+    font-family: 'Oswald', sans-serif;    
     opacity:1 !important;
 }
 .mip2{    
