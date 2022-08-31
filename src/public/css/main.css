@@ -279,7 +279,7 @@ input,textarea,button{
 }
 .card{
         border-color: black; 
-        background: linear-gradient(180deg, rgb(3, 45, 78) 35%,rgb(246, 247, 248)35%);
+        background: linear-gradient(180deg, rgb(1, 5, 65) 35%,rgb(246, 247, 248)35%);
 }
 
 
@@ -288,7 +288,7 @@ input,textarea,button{
 }
 
 .micardtit{             
-    color:black;   
+    color:white;   
     font-size: 1rem;  
     font-family: 'Anton', sans-serif;
 } 
@@ -297,7 +297,7 @@ input,textarea,button{
     color: black;
     font-size: 14px;   
     font-family: 'Anton', sans-serif;
-    opacity:0.6 !important;        
+    opacity:1 !important;        
 }
 
 .mip{     
