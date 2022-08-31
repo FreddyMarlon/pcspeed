@@ -270,7 +270,7 @@ input,textarea,button{
 }
 
 #imgbody{
-    background-color: rgb(129, 175, 243);
+    
    /* background-image: url('/img/solicitud2.png'); */
     background-position: left;
     /*background-size: contain;*/
@@ -280,6 +280,7 @@ input,textarea,button{
 }
 .card{
     border-color: black;      
+    background-color: lightslategrey;
 }
 
 
