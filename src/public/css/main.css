@@ -280,7 +280,7 @@ input,textarea,button{
     border-color: black; 
     background-image: url('/img/solicitud.png');      
     background-size: contain;
-    background-size: 250px 250px;
+    background-size: 300px 250px;
     background-repeat: no-repeat;
     opacity: 0.9;
 }
