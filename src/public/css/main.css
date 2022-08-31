@@ -156,8 +156,7 @@ h5{
  }
  .h9{
     color: black;
-    font-size: 16px;    
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;        
  }
  .h10{
     color: orange;
@@ -268,6 +267,7 @@ input,textarea,button{
 #miprofile{
     background: white;
 }
+
 #imgbody{
     background-image: url('/img/solicitud.png'); 
     background-position: left;
@@ -277,29 +277,28 @@ input,textarea,button{
     opacity: 1;
 }
 .card{
-    border-color: black;  
-    font-family: 'Open Sans Condensed', sans-serif;   
+    border-color: black;      
 }
+
 .col {
     display: inline-block;
 }
+
 .micardtit{     
     
     color:black;   
     font-size: 0.6rem;  
-    font-family: 'Anton', sans-serif;      
+        
     
 } 
 .miedo{     
     color: black;
-    font-size: 12px;    
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 12px;       
     
 }
 .mip{     
     color:black;
-    font-size: 0.6rem;    
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 0.6rem;       
     opacity:1 !important;
 }
 .mip2{    
