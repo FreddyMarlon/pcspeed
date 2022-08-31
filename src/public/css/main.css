@@ -269,17 +269,16 @@ input,textarea,button{
     background: white;
 }
 
-#imgbody{
-   
-    background-image: url('/img/fondotarjeta2.jpg'); 
-    background-position: left;
-    /*background-size: contain;*/
+#imgbody{      
+   /* background-position: left;
+    background-size: contain;*/
     background-size: 400px 200px;
     background-repeat: no-repeat;
     opacity: 1;
 }
 .card{
-    border-color: black;      
+    border-color: black; 
+    background-image: url('/img/fondotarjeta2.jpg');      
   
 }
 
