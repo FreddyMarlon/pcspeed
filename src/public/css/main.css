@@ -294,7 +294,9 @@ input,textarea,button{
 
 .miedo{     
     color: black;
-    font-size: 12px;           
+    font-size: 16px;   
+    font-family: 'Anton', sans-serif;
+    opacity:0.8 !important;        
 }
 
 .mip{     
