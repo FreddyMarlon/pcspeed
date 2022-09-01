@@ -209,7 +209,7 @@ input,textarea,button{
     font-family: 'Oswald', sans-serif;    
 }
 .navbar {
-    background: linear-gradient(180deg, black 13%, rgb(255, 124, 1) 20%,rgb(12, 12, 12)5%);
+    background: linear-gradient(180deg, black 35%, rgb(255, 124, 1) 35%,rgb(12, 12, 12)5%);
     font-size: 18px;  
     font-family: 'Oswald', sans-serif;  
    /* background-color:#010414;*/
