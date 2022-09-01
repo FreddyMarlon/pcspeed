@@ -6,7 +6,7 @@ display: none
 body {
      
    /* background-image: url('/img/fondocuerpo4.png');*/
-    background-color: rgb(54, 53, 53);    
+    background-color: grey;   
     background-position: center center;
     background-repeat:repeat;
     background-size:cover;
@@ -209,7 +209,8 @@ input,textarea,button{
     font-family: 'Oswald', sans-serif;    
 }
 .navbar {
-    background: linear-gradient(180deg, black 80%, rgb(255, 124, 1) 30%);
+    /*background: linear-gradient(180deg, black 80%, rgb(255, 124, 1) 30%);*/
+    background-image: url('/img/fondonavbar.png');
     font-size: 18px;  
     font-family: 'Oswald', sans-serif;  
    /* background-color:#010414;*/
