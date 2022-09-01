@@ -3,10 +3,9 @@
 display: none
 }
 /*Letras y fondos*/
-body {
-     
+body {     
    /* background-image: url('/img/fondocuerpo4.png');*/
-    /*background-color: grey;   */
+    background: linear-gradient(180deg, rgb(250, 250, 252) 38%, rgb(250, 250, 252) 38%, rgb(1, 1, 29) 38%);    
     background-position: center center;
     background-repeat:repeat;
     background-size:cover;
@@ -208,9 +207,8 @@ input,textarea,button{
     font-size: 1rem; 
     font-family: 'Oswald', sans-serif;    
 }
-.navbar {
-    /*background: linear-gradient(180deg, black 80%, rgb(255, 124, 1) 30%);*/
-    background-image: url('/img/fondonavbar.png');
+.navbar {    
+    background-image:url('/img/fondonavbar.png');
     font-size: 18px;  
     font-family: 'Oswald', sans-serif;  
    /* background-color:#010414;*/
@@ -270,9 +268,7 @@ input,textarea,button{
     background: white;
 }
 
-#imgbody{         
-   /* background: linear-gradient(180deg, rgb(15, 15, 15) 7%,rgb(15, 15, 15)7%);*/
-   /*background-image: url('/img/solicitud.png');*/
+#imgbody{            
     background-size: contain;
     background-size: 260px 200px;
     background-repeat: no-repeat;
