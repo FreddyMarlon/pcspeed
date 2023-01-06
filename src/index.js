@@ -1,6 +1,7 @@
+
 const express = require('express');
 const morgan = require('morgan');
-const exphbs = require('express-handlebars');
+let  exphbs  = require('express-handlebars');
 const flash = require('connect-flash');
 const session = require('express-session');
 const mysqlStore= require('express-mysql-session');
@@ -25,7 +26,8 @@ const path = require('path');
 //configuraciones
 app.set('port', process.env.PORT || 3000);
 app.set('views',path.join(__dirname,'views'));
-app.engine('.hbs',exphbs({
+
+app.engine('.hbs', exphbs.engine({
    defaulayout: 'main',
    layoutsDir: path.join(app.get('views'),'layouts'),
    partialsDir: path.join(app.get('views'),'partials'),
