@@ -1,9 +1,9 @@
 module.exports={
 	database:{
-		 host:'sql9.freesqldatabase.com',
-		 user:'sql9588308',
-		 password:'H6EPU3stMM',
-		 database:'sql9588308'
+		 host:'containers-us-west-38.railway.app',
+		 user:'root',
+		 password:'zXvEpiF2d2fB14fIMf4o',
+		 database:'railway'
 
 	}
 	/*database:{
