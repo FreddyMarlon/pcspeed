@@ -1,9 +1,9 @@
 module.exports={
 	database:{
-		 host:'containers-us-west-38.railway.app',
-		 user:'root',
-		 password:'zXvEpiF2d2fB14fIMf4o',
-		 database:'railway'
+		 host:'sql205.vastserve.com',
+		 user:'vasts_33373515',
+		 password:'C@psule73',
+		 database:'vasts_33373515_pcspeed'
 
 	}
 	/*database:{
