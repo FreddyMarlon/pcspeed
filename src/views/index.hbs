@@ -1,7 +1,7 @@
 
 	<main class="index">
     <script>		  
-		   var socket = io('https://pcspeed.herokuapp.com/');
+		   var socket = io('pcspeed-production.up.railway.app');
 			socket.on('pushNotification', function (data) {			
 			Push.create("PcSpeed ", {
 					body: data.msg, 
