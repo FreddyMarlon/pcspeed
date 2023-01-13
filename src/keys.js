@@ -1,9 +1,9 @@
 module.exports={
 	database:{
-		 host:'sql205.vastserve.com',
-		 user:'vasts_33373515',
-		 password:'C@psule73',
-		 database:'vasts_33373515_pcspeed'
+		 host:'sql10.freesqldatabase.com',
+		 user:'sql10590487',
+		 password:'vnfuxBJDN5',
+		 database:'sql10590487'
 
 	}
 	/*database:{
